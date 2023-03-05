@@ -1,6 +1,6 @@
 # Projeto Genius-Kitchen
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O projeto Genius Kitchen foi desenvolvido como atividade da instituição Centro Universitário Senac - Santo Amaro, sendo voltado a disciplina PI3.  O objetivo é realizar a criação de uma plataforma de um restaunante fictício, com o intuito de utilizar os conhecimentos passados em aula.
 
 ## Available Scripts
 
