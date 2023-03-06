@@ -1,4 +1,4 @@
-# Projeto Genius-Kitchen
+# Projeto Genius Kitchen
 
 O projeto Genius Kitchen foi desenvolvido como atividade da instituição Centro Universitário Senac - Santo Amaro, sendo voltado a disciplina PI3.  O objetivo é realizar a criação de uma plataforma de um restaunante fictício, com o intuito de utilizar os conhecimentos passados em aula.
 
