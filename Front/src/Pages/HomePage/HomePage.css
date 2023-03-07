@@ -5,7 +5,7 @@
 
 .cabecalho {
     float: inherit;
-    background-image: url(../../assets/images/fundo-cabecalho.png);
+    background-image: url(../../assets/images/banner-inicial.svg);
     background-size: cover;
     height: 600px;
     background-position: 0 80%;

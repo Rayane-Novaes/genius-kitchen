@@ -1,6 +1,6 @@
 import './HomePage.css';
 import '../../assets/common/site.css'
-import Logo from "../../assets/images/Logo.png"
+import Logo from "../../assets/images/logo.svg"
 export default function HomePage() {
 
   return (
