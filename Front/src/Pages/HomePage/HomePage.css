@@ -1,0 +1,81 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    float: inherit;
+    background-image: url(../../assets/images/fundo-cabecalho.png);
+    background-size: cover;
+    height: 600px;
+    background-position: 0 80%;
+}
+
+.container-navbar-texto {
+    display: inline;
+    color: white;
+    font-family: "Staatliches";
+    font-size: 40px!important;
+    line-height: 110px;
+}
+.container-navbar-texto > h1{ 
+    color: #EDD2BF;
+    margin: 0px
+}
+
+.container-navbar-texto h1 > span{ 
+    color: #D89869;
+}
+
+.cabecalho > .container {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.cabecalho
+.container-navbar-login {
+    margin-top: 24px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.btn-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30px;
+    width: 80px;
+    background-color: #c95931;
+    border-radius: 15px;
+    color: white;
+    align-items: center;
+}
+.btn-login > p {
+    margin: 0px;
+}
+
+.container-navbar-logo {
+    color: white;
+    line-height: 25px;
+}
+
+#navbar-logo{
+    width: 120px;
+}
+.navbar-logo-titulos {
+    margin-top: -10px;
+}
+.navbar-logo-titulos #kitchen {
+    font-size: 20px;
+    margin: 0px;
+    font-family: "JoseFinSans";
+}
+.navbar-logo-titulos #genius {
+    font-size: 56px;
+    margin-top: -10px!important;
+    margin-right: 13px!important;
+    margin-bottom: 90px!important;
+    margin: 0px;
+    font-family: "Rochester";
+}
