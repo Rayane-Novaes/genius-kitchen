@@ -79,3 +79,61 @@
     margin: 0px;
     font-family: "Rochester";
 }
+
+.secao-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 110px 0px;
+    background-color: #252424;
+}
+
+.s2-textos{
+    display: flex;
+    flex-direction: column;
+
+    width: 370px;
+}
+
+.s2-textos h1{
+    font: 65px "Staatliches";
+    color: #f8f6f6;
+    line-height: 60px;
+    margin-bottom: 20px;
+    width: 662px;
+    Height: 93px;
+    Top: 1008px;
+    Left: 679px;
+    
+}
+.s2-textos h1 > span{ 
+    color: #D89869;
+}
+
+.s2-textos p{
+   width: 709px;
+   height: 72px;
+   left: 677px;
+   top: 1173px;
+
+   font-family: 'Chivo';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 30px;
+   line-height: 36px;
+   text-align: center;
+   letter-spacing: 0.065em;
+
+   color: #FFFFFF;
+
+}
+
+.s2-textos p > span{ 
+    color: #D89869;
+}
+
+.secao-02 > * {
+   margin: 0px 50px;
+}
