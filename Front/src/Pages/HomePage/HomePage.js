@@ -25,6 +25,13 @@ export default function HomePage() {
                 </div>
             </div>
         </div>
+           <div className="secao-2">
+              <img src="../../ assets/images/logo.svg"/>
+              <div class="s2-textos">
+                <h1><span>PROMOÇAÕ</span> COMBO FAMILIA</h1>
+                <p>Nas compras dos combos familia, consiga um <span>desconto de 30% nas sobremesas</span></p>
+              </div>
+           </div>
     </div>
   )
 }
