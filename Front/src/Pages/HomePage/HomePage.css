@@ -1,0 +1,299 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../../../public/assets/banner-inicial.svg);
+    background-size: cover;
+    height: 600px;
+    background-position: 0 80%;
+
+}
+
+.cabecalho-filtro-home-page {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: auto;
+}
+
+.container-navbar-texto {
+    display: inline;
+    color: white;
+    font-family: "Staatliches";
+    font-size: 40px !important;
+    line-height: 110px;
+}
+
+.container-navbar-texto>h1 {
+    color: #EDD2BF;
+    font-size: 70px;
+    margin: 0px
+}
+
+.container-navbar-texto h1>span {
+    color: #D89869;
+}
+
+.cabecalho>div {
+    padding: 16px !important;
+    height: 100vh;
+    padding: 1px;
+    background-color: rgba(0, 0, 0, 0.40);
+    ;
+}
+
+.container-navbar-login {
+    padding-top: 24px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.btn-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30px;
+    width: 90px;
+    background-color: #c95931;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0px 0px 50px 10px #865937;
+    align-items: center;
+}
+
+.btn-login>a {
+    text-decoration: none;
+    color: white;
+    font-family: "JoseFinSans";
+
+}
+
+.container-navbar-logo {
+    color: white;
+    line-height: 25px;
+}
+
+#navbar-logo {
+    width: 120px;
+}
+
+.secao-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    background-image: url(../../../public/assets/promocoes.svg);
+    background-size: cover;
+    height: 600px;
+    background-color: #252424;
+    background-position: 90% 100%;
+}
+
+.s2-textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    margin-right: 16px;
+}
+
+.s2-textos h1 {
+    font: 65px "Staatliches";
+    color: #f8f6f6;
+    line-height: 60px;
+    margin-bottom: 20px;
+
+}
+
+.s2-textos h1>span {
+    color: #D89869;
+}
+
+.s2-textos p {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.065em;
+    color: #FFFFFF;
+
+}
+#logo-footer {
+    width: 25px;
+}
+.s2-textos p>span {
+
+    color: #D89869;
+}
+
+.secao-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2F3030;
+    padding-top: 24px;
+}
+
+.s4-textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s4-textos h1 {
+    font: 18px "Inter";
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+}
+
+.s4-textos p {
+    font: 12px "Inter";
+    text-align: center;
+    font-weight: 100;
+    color: white;
+    margin: 5px;
+}
+
+/*Cardapio - Inicio*/
+.container-cardapio-home-page {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #171717;
+    height: auto;
+    padding-bottom: 36px;
+}
+
+.container-campo-buscar-home-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    padding: 36px;
+}
+
+.container-tab-navegation-home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tab-navegation-home-page {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    gap: 24px;
+    color: white;
+    margin: 16px;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+
+.tab-navegation-home-page>teste {
+    text-decoration: none;
+    color: white;
+    font-family: "Chivo";
+    position: static;
+    height: 30px;
+    border-bottom: 4px solid transparent;
+
+}
+
+.tab-navegation-home-page>*:hover,
+.tab-navegation-home-page>*:focus {
+
+    border-bottom: 4px solid #D19D78;
+
+}
+
+#campo-busca-home-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    text-align: center;
+    width: auto;
+    min-width: 380px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 17px;
+    border: 3.5px solid;
+    border-color: #515050;
+    padding-right: 10px;
+    background-image: url(../../../public/assets/icon-busca-barra-busca.svg);
+    background-repeat: no-repeat;
+    background-position: left 25px center;
+    background-size: 25px 25px;
+    color: #D7D4D4;
+    outline: none;
+
+}
+
+.container-itens-home-page {
+    display: flex;
+    max-width: 65vw;
+    margin-top: 48px;
+}
+
+.subcontainer-itens-home-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: center;
+
+}
+
+#campo-busca-home-page::placeholder {
+    color: #D7D4D4;
+    font-family: "Inter";
+    font-weight: 200;
+}
+
+@media screen and (max-width: 500px) {
+    .container-campo-buscar-home-page {}
+
+    #campo-busca-home-page {
+        width: 55vw !important;
+        text-align: end;
+        min-width: 35vw;
+    }
+
+    .tab-navegation-home-page {
+        gap: 16px
+    }
+
+}
+
+@media screen and (max-width: 745px) {
+
+    .container-itens-home-page {
+        max-width: 80vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .secao-2 {
+        align-items: center;
+    }
+
+    .s2-textos {
+        min-width: 80vw;
+    }
+}

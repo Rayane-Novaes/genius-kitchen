@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Staatliches";
+    src: url(../fonts/Staatliches-Regular.ttf);
+}
+@font-face {
+    font-family: "JoseFinSans";
+    src: url(../fonts/JosefinSans-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Rochester";
+    src: url(../fonts/Rochester-Regular.ttf);
+}
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: "Chivo";
+    src: url(../fonts/Chivo-VariableFont_wght.ttf);
+}
