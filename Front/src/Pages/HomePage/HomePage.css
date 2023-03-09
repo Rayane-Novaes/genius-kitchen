@@ -137,3 +137,48 @@
 .secao-02 > * {
    margin: 0px 50px;
 }
+.img-secao-2{
+    position: absolute;
+    width: 100%;
+    height: 505px;
+    left: -204px;
+    top: 600px;
+}
+
+.secao-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 110px 0px;
+    background-color: #2F3030;
+}
+
+.s4-textos{
+    display: flex;
+    flex-direction: column;
+
+    width: 370px;
+}
+
+.s4-textos h1{
+    font: 30px "Inter";
+    width: 780px;
+    text-align: center;
+    line-height: 32px;
+
+    margin-bottom: 30px;
+    color: #faf3f3;
+}
+
+.s4-textos p{
+    font: 20px "Inter";
+    width: 780px;
+    text-align: center;
+    line-height: 32px;
+
+    margin-bottom: 30px;
+
+    color: #FFFFFF;
+}
