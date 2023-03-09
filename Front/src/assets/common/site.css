@@ -9,15 +9,12 @@
 @font-face {
     font-family: "Rochester";
     src: url(../fonts/Rochester-Regular.ttf);
-<<<<<<< HEAD
-=======
 }
 @font-face {
     font-family: "Inter";
-    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+    src: url(../fonts/Inter-Variable.ttf);
 }
 @font-face {
     font-family: "Chivo";
     src: url(../fonts/Chivo-VariableFont_wght.ttf);
->>>>>>> 06c485c06a3cc68a94bbca3a0cca4e07637c5a60
 }

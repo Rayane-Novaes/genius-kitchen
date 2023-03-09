@@ -4,13 +4,6 @@
 }
 
 .cabecalho {
-<<<<<<< HEAD
-    float: inherit;
-    background-image: url(../../assets/images/banner-inicial.svg);
-    background-size: cover;
-    height: 600px;
-    background-position: 0 80%;
-=======
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -25,34 +18,12 @@
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: auto;
->>>>>>> 06c485c06a3cc68a94bbca3a0cca4e07637c5a60
 }
 
 .container-navbar-texto {
     display: inline;
     color: white;
     font-family: "Staatliches";
-<<<<<<< HEAD
-    font-size: 40px!important;
-    line-height: 110px;
-}
-.container-navbar-texto > h1{ 
-    color: #EDD2BF;
-    margin: 0px
-}
-
-.container-navbar-texto h1 > span{ 
-    color: #D89869;
-}
-
-.cabecalho > .container {
-    padding-left: 25px;
-    padding-right: 25px;
-}
-.cabecalho
-.container-navbar-login {
-    margin-top: 24px;
-=======
     font-size: 40px !important;
     line-height: 110px;
 }
@@ -77,7 +48,6 @@
 
 .container-navbar-login {
     padding-top: 24px;
->>>>>>> 06c485c06a3cc68a94bbca3a0cca4e07637c5a60
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
@@ -89,16 +59,6 @@
     flex-direction: row;
     justify-content: center;
     height: 30px;
-<<<<<<< HEAD
-    width: 80px;
-    background-color: #c95931;
-    border-radius: 15px;
-    color: white;
-    align-items: center;
-}
-.btn-login > p {
-    margin: 0px;
-=======
     width: 90px;
     background-color: #c95931;
     border-radius: 15px;
@@ -112,7 +72,6 @@
     color: white;
     font-family: "JoseFinSans";
 
->>>>>>> 06c485c06a3cc68a94bbca3a0cca4e07637c5a60
 }
 
 .container-navbar-logo {
@@ -120,46 +79,6 @@
     line-height: 25px;
 }
 
-<<<<<<< HEAD
-#navbar-logo{
-    width: 120px;
-}
-.navbar-logo-titulos {
-    margin-top: -10px;
-}
-.navbar-logo-titulos #kitchen {
-    font-size: 20px;
-    margin: 0px;
-    font-family: "JoseFinSans";
-}
-.navbar-logo-titulos #genius {
-    font-size: 56px;
-    margin-top: -10px!important;
-    margin-right: 13px!important;
-    margin-bottom: 90px!important;
-    margin: 0px;
-    font-family: "Rochester";
-}
-
-.secao-2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    padding: 110px 0px;
-    background-color: #252424;
-}
-
-.s2-textos{
-    display: flex;
-    flex-direction: column;
-
-    width: 370px;
-}
-
-.s2-textos h1{
-=======
 #navbar-logo {
     width: 120px;
 }
@@ -186,57 +105,10 @@
 }
 
 .s2-textos h1 {
->>>>>>> 06c485c06a3cc68a94bbca3a0cca4e07637c5a60
     font: 65px "Staatliches";
     color: #f8f6f6;
     line-height: 60px;
     margin-bottom: 20px;
-<<<<<<< HEAD
-    width: 662px;
-    Height: 93px;
-    Top: 1008px;
-    Left: 679px;
-    
-}
-.s2-textos h1 > span{ 
-    color: #D89869;
-}
-
-.s2-textos p{
-   width: 709px;
-   height: 72px;
-   left: 677px;
-   top: 1173px;
-
-   font-family: 'Chivo';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 30px;
-   line-height: 36px;
-   text-align: center;
-   letter-spacing: 0.065em;
-
-   color: #FFFFFF;
-
-}
-
-.s2-textos p > span{ 
-    color: #D89869;
-}
-
-.secao-02 > * {
-   margin: 0px 50px;
-}
-.img-secao-2{
-    position: absolute;
-    width: 100%;
-    height: 505px;
-    left: -204px;
-    top: 600px;
-}
-
-.secao-4{
-=======
 
 }
 
@@ -268,44 +140,10 @@
 }
 
 .secao-4 {
->>>>>>> 06c485c06a3cc68a94bbca3a0cca4e07637c5a60
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-
-    padding: 110px 0px;
-    background-color: #2F3030;
-}
-
-.s4-textos{
-    display: flex;
-    flex-direction: column;
-
-    width: 370px;
-}
-
-.s4-textos h1{
-    font: 30px "Inter";
-    width: 780px;
-    text-align: center;
-    line-height: 32px;
-
-    margin-bottom: 30px;
-    color: #faf3f3;
-}
-
-.s4-textos p{
-    font: 20px "Inter";
-    width: 780px;
-    text-align: center;
-    line-height: 32px;
-
-    margin-bottom: 30px;
-
-    color: #FFFFFF;
-=======
     background-color: #2F3030;
     padding-top: 24px;
 }
@@ -458,5 +296,4 @@
     .s2-textos {
         min-width: 80vw;
     }
->>>>>>> 06c485c06a3cc68a94bbca3a0cca4e07637c5a60
 }
