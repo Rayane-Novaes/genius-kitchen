@@ -1,6 +1,13 @@
 # Projeto Genius Kitchen🍽️
 
-O projeto Genius Kitchen foi desenvolvido como atividade da instituição Centro Universitário Senac - Santo Amaro, sendo voltado a disciplina PI3.  O objetivo é realizar a criação de uma plataforma de um restaunante fictício, com o intuito de utilizar os conhecimentos passados em aula.
+Lista de funcionalidades do pi
+Funções do Admin:
+Cadastrar, visualizar, alterar e deletar produtos;
+Visualizar e finalizar pedidos.
+Cadastrar pedidos;
+Visualizar pedidos prontos.
+
+O projeto Genius Kitchen foi desenvolvido como atividade da instituição Centro Universitário Senac - Santo Amaro, sendo voltado a disciplina PI3.  O objetivo é realizar a criação de uma plataforma de um restaurante fictício, com o intuito de utilizar os conhecimentos passados em aula.
 
 ## Tecnologias
 ![REACT](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
