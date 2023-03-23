@@ -1,5 +1,13 @@
 # Projeto Genius Kitchen🍽️
 
+Desenvolvedores
+José Vieira
+Luan Figueredo
+Matheus Melo
+Pâmera Rozembrá
+Rayane Novais
+Vinicius Souza Araujo
+
 Lista de funcionalidades do pi
 Funções do Admin:
 Cadastrar, visualizar, alterar e deletar produtos;
