@@ -17,6 +17,9 @@ Visualizar pedidos prontos.
 
 O projeto Genius Kitchen foi desenvolvido como atividade da instituição Centro Universitário Senac - Santo Amaro, sendo voltado a disciplina PI3.  O objetivo é realizar a criação de uma plataforma de um restaurante fictício, com o intuito de utilizar os conhecimentos passados em aula.
 
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.figma.com/file/ZQFR6bbSsQDv9j968SK2XH/GENIUS-KITCHEN?node-id=0-1&t=pUvU4VrfYSazvoqE-0/)
+
 ## 🛠 Skills
 Java, MySql, Javascript, HTML, CSS...
 
