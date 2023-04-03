@@ -1,27 +1,24 @@
 # Projeto Genius Kitchen🍽️
 
-Desenvolvedores
-José Vieira
-Luan Figueredo
-Matheus Melo
-Pâmera Rozembrá
-Rayane Novais
-Vinicius Souza Araujo
+### Lista de funcionalidades do PI:
+- Cadastrar, visualizar, alterar e deletar produtos;
+- Visualizar e finalizar pedidos;
+- Cadastrar pedidos;
+- Visualizar pedidos prontos.
 
-Lista de funcionalidades do pi
-Funções do Admin:
-Cadastrar, visualizar, alterar e deletar produtos;
-Visualizar e finalizar pedidos.
-Cadastrar pedidos;
-Visualizar pedidos prontos.
 
+### Objetivo do projeto:
 O projeto Genius Kitchen foi desenvolvido como atividade da instituição Centro Universitário Senac - Santo Amaro, sendo voltado a disciplina PI3.  O objetivo é realizar a criação de uma plataforma de um restaurante fictício, com o intuito de utilizar os conhecimentos passados em aula.
 
-## 🔗 Links
+### 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.figma.com/file/ZQFR6bbSsQDv9j968SK2XH/GENIUS-KITCHEN?node-id=0-1&t=pUvU4VrfYSazvoqE-0/)
 
-## 🛠 Skills
-Java, MySql, Javascript, HTML, CSS...
+### 🛠 Skills
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![MYSQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 
 
 ## Desenvolvedores :octocat:
