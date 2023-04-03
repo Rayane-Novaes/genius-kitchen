@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afbb584c-e771-4e3e-ab6a-785e20f1b6ca" name="Changes" comment="" />
+    <list default="true" id="afbb584c-e771-4e3e-ab6a-785e20f1b6ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/geniusKitchen/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geniusKitchen/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geniusKitchen/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geniusKitchen/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geniusKitchen/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +27,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/DELL/OneDrive - SENAC - SP/Área de Trabalho/PROJETO INTEGRADOR - NÃO APAGA!!!!!!/genius-kitchen"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
