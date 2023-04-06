@@ -1,4 +1,6 @@
-package br.com.geniuskitchen;
+package br.com.geniuskitchen.servlet.geniuskitchen.servlet;
+
+import br.com.geniuskitchen.servlet.model.Produto;
 
 import java.io.IOException;
 
@@ -17,20 +19,20 @@ public class CreateGeniusKitchenServlet extends HttpServlet{
 
 	@Override
 	protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse resp) throws ServletException, IOException {
-		String nomeProduto=httpServletRequest.getParameter("nome-produto");
-				String precoProduto=httpServletRequest.getParameter("preco-produto");
-		String categoriaProduto=httpServletRequest.getParameter("categoria-produto");
-		
-		System.out.println(nomeProduto);
-		System.out.println(precoProduto);
-		System.out.println(categoriaProduto);
-		
-		//Produto objProduto = new Produto();
-		//objProduto.setNome(nomeProduto);
-		//objProduto.setPreco(precoProduto);
-		//objProduto.setCategoria(categoriaProduto);
 
-		//new ProdutoDao().createProduto(objProduto);
+		String nomeProduto=httpServletRequest.getParameter("nome-produto");
+
+				String precoProduto=httpServletRequest.getParameter("preco-produto");
+
+		String categoriaProduto=httpServletRequest.getParameter("categoria-produto");
+
+		
+		Produto produto = new Produto();
+		produto.setNome(nomeProduto);
+		produto.setPreco(10.0);
+		produto.setCategoria(categoriaProduto);
+
+		new ProdutoDao().createProduto(produto);
 		
 		
 		
