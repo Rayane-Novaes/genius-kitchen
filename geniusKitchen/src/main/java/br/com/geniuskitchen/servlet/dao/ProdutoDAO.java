@@ -12,11 +12,11 @@ public class ProdutoDAO {
         System.out.println("Preço: " + produto.getPreco());
         boolean status = false;
 
-        String sql = "INSERT INTO [Produtos] (Nome, Categoria, Preco) VALUES (?, ?, ?);";
+        String sql = "INSERT INTO Produtos (Nome, Categoria, Valor) VALUES (?, ?, ?);";
 
         try {
 
-            Connection connection = DriverManager.getConnection("StringConnection");
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test","sa","sa");
 
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, produto.getNome());

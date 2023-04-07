@@ -16,7 +16,6 @@ public class CreateGeniusKitchenServlet extends HttpServlet{
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
 
 	@Override
 	protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse resp) throws ServletException, IOException {
