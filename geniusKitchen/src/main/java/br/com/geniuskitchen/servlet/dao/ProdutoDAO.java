@@ -9,7 +9,7 @@ import java.sql.PreparedStatement;
 
 public class ProdutoDAO {
     public boolean createProduto(Produto produto){
-
+        System.out.println("Preço: " + produto.getPreco());
         boolean status = false;
 
         String sql = "INSERT INTO [Produtos] (Nome, Categoria, Preco) VALUES (?, ?, ?);";

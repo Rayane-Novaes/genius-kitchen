@@ -23,15 +23,12 @@ public class CreateGeniusKitchenServlet extends HttpServlet{
 
 		String nomeProduto=httpServletRequest.getParameter("nome-produto");
 
-				String precoProduto=httpServletRequest.getParameter("preco-produto");
+		String precoProduto=httpServletRequest.getParameter("preco-produto");
 
 		String categoriaProduto=httpServletRequest.getParameter("categoria-produto");
 
 		
-		Produto produto = new Produto();
-		produto.setNome(nomeProduto);
-		produto.setPreco(10.0);
-		produto.setCategoria(categoriaProduto);
+		Produto produto = new Produto(nomeProduto, categoriaProduto, precoProduto);
 
 		new ProdutoDAO().createProduto(produto);
 		
