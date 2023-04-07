@@ -1,5 +1,6 @@
 package br.com.geniuskitchen.servlet.geniuskitchen.servlet;
 
+import br.com.geniuskitchen.servlet.dao.ProdutoDAO;
 import br.com.geniuskitchen.servlet.model.Produto;
 
 import java.io.IOException;
@@ -32,11 +33,7 @@ public class CreateGeniusKitchenServlet extends HttpServlet{
 		produto.setPreco(10.0);
 		produto.setCategoria(categoriaProduto);
 
-		new ProdutoDao().createProduto(produto);
-		
-		
-		
-		
+		new ProdutoDAO().createProduto(produto);
 		
 		httpServletRequest.getRequestDispatcher("index.jsp").forward(httpServletRequest, resp);
 	}		
