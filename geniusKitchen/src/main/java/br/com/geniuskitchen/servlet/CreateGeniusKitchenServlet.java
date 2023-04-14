@@ -1,7 +1,7 @@
-package br.com.geniuskitchen.servlet.geniuskitchen.servlet;
+package br.com.geniuskitchen.servlet;
 
-import br.com.geniuskitchen.servlet.dao.ProdutoDAO;
-import br.com.geniuskitchen.servlet.model.Produto;
+import br.com.geniuskitchen.dao.ProdutoDAO;
+import br.com.geniuskitchen.model.Produto;
 
 import java.io.IOException;
 

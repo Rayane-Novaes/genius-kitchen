@@ -1,4 +1,4 @@
-package br.com.geniuskitchen.servlet.model;
+package br.com.geniuskitchen.model;
 
 public class Produto {
 
