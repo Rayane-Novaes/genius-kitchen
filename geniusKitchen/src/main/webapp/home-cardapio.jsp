@@ -12,8 +12,6 @@
 <div class="home-page">
     <div class="cabecalho">
         <div >
-        <a href="/tela03adminCozinheiroPedidos.jsp">Admin cozinha</a>
-        <a href="/tela04CadastroDeProduto.jsp">Cadastrar Produto</a>
             <div class="container">
                 <div class="container-navbar-login">
                     <div class="btn-login">

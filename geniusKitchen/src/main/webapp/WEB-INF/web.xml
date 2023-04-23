@@ -36,4 +36,13 @@
     <servlet-name>CadastroProduto</servlet-name>
     <url-pattern>/cadastro-produto</url-pattern>
   </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>HomeCardapio</servlet-name>
+    <jsp-file>/home-cardapio.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeCardapio</servlet-name>
+    <url-pattern>/home-cardapio</url-pattern>
+  </servlet-mapping>
 </web-app>
