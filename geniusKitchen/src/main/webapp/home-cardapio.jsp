@@ -34,10 +34,10 @@
         </div>
         <div class="container-tab-navegation-home-page">
             <div class="tab-navegation-home-page">
-                <tabs href="">Lanches</tabs>
-                <tabs href="">Sobremesas</tabs>
-                <tabs href="">Bebidas</tabs>
-                <tabs href="">Adicionais</tabs>
+                <a href="#">Lanches</a>
+                <a href="#">Sobremesas</a>
+                <a href="#">Bebidas</a>
+                <a href="#">Adicionais</a>
             </div>
         </div>
         <div class="container-itens-home-page">

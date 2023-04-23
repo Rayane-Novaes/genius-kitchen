@@ -209,7 +209,7 @@
     border-bottom: 1px solid white;
 }
 
-.tab-navegation-home-page> tabs {
+.tab-navegation-home-page> a {
     text-decoration: none;
     color: white;
     font-family: "Chivo";
