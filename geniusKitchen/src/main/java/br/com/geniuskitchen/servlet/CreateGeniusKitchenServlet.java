@@ -32,5 +32,10 @@ public class CreateGeniusKitchenServlet extends HttpServlet{
 		new ProdutoDAO().createProduto(produto);
 		
 		httpServletRequest.getRequestDispatcher("index.jsp").forward(httpServletRequest, resp);
-	}		
+	}
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		super.doGet(req, resp);
+	}
 }

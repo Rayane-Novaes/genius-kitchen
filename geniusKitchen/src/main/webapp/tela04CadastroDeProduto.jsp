@@ -36,6 +36,7 @@
 
 <button>alterar</button>
 <button>excluír</button>
+<a href="/"><button>Home</button></a>
 </div>
 
 </body>

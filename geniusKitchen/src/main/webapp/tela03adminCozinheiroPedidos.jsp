@@ -2,7 +2,7 @@
 <title>adminCozinheiroPedidos</title>
 <body>
 <div>
-        <a href="/geniusKitchen/src/main/webapp/tela04CadastroDeProduto.jsp">Cadastrar Produto</a>
+        <a href="/geniusKitchen/src/main/webapp/home-cardapio.jsp">Cadastrar Produto</a>
         <h1>PEDIDOS</h1>
         <div class="Ordem de pedidos">
             <h2>Prioridade: 1°</h2>  
