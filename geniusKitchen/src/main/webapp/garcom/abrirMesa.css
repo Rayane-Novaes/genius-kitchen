@@ -3,7 +3,89 @@
 
 *{
     margin:0;
-    background-color: #181818;
+
     font-family: Inter;
     color:#FFFFFF;
+    background-color: #181818;
+
+
 }
+
+.box-principal{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.box-formulario{
+
+        display: flex;
+        width:55vw;
+        margin-top: 50px;
+        flex-direction: column;
+}
+
+.titulo{
+    color: #E2664A;
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-family: 'Staatliches', serif;
+
+}
+
+input{
+    border: none;
+    background-color: #353434;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+select{
+    border: none;
+    background-color: #353434;
+    padding: 10px;
+    border-radius: 10px;
+     width: 250px;
+
+}
+
+
+button{
+        background-color: transparent;
+        border: none;
+        border-radius: 10px;
+
+}
+
+.cancelar-icon{
+    background-color: #E2664A;
+    width: 50px;
+    height: 28px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.cancelar-icon:hover{
+    background-color: #a74d38;
+}
+
+.continuar-icon{
+    background-color: #E2664A;
+    width: 50px;
+    height: 28px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.continuar-icon:hover{
+    background-color: #a74d38;
+}
+
+
+

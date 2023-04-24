@@ -25,7 +25,7 @@
 
         <div class="box-button">
             <a href="abrirMesa.jsp" >
-                <img class="adicionar-icon" class="logo" src="images/adicionarIcon.svg" alt="logo Genius Kitchen">
+                <img class="adicionar-icon" class="logo" src="images/adicionarIcon.svg" alt="Icone adicionar">
             </a>
         </div>
     </div>
