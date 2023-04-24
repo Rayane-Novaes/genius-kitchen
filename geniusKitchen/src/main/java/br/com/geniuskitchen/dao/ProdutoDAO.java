@@ -5,6 +5,7 @@ import br.com.geniuskitchen.model.Produto;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.util.List;
 
 public class ProdutoDAO {
     public boolean createProduto(Produto produto){
@@ -33,5 +34,6 @@ public class ProdutoDAO {
         }
 
     }
+
 
 }

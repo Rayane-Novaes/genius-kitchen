@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <head>
     <meta charset="UTF-8">
@@ -17,10 +18,12 @@
         <h1 class="titulo"> CONCLUIDOS<h1>
 
         <div class="box-pedidos">
-            <p>aaaaaaaaaaaaaaaaaaa</p>
-            <p>aaaaaaaaaaaaaaaaaaa</p>
-            <p>aaaaaaaaaaaaaaaaaaa</p>
-            <p>aaaaaaaaaaaaaaaaaaa</p>
+            <c:forEach var="pedido" items="${pedidos}">
+            <p>${pedido.mesa}</p>
+
+
+            </c:forEach>
+
         </div>
 
         <div class="box-button">

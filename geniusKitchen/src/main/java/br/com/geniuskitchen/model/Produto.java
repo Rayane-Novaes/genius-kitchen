@@ -5,9 +5,7 @@ public class Produto {
     //Produto
     private String nome;
 
-    public Produto(){
 
-    }
     public Produto(String nome, String categoria, String preco) {
         this.nome = nome;
         this.categoria = categoria;
