@@ -27,7 +27,12 @@
             </div>
         </div>
     </div>
-<!--Secção 2 aqui-->	
+<div class="secao-2">
+        <div class="s2-textos">
+            <h1><span>PROMOÇÃO</span> COMBO FAMILIA</h1>
+            <p>Nas compras dos combos familia, consiga um <span>desconto de 30% nas sobremesas</span></p>
+        </div>
+    </div>	
     <div class="container-cardapio-home-page">
         <div class="container-campo-buscar-home-page">
             <input id="campoBuscaHomePage" placeholder="procure sua comida aqui">
@@ -54,6 +59,15 @@
             </div>
         </div>
     </div>
-	<!--Secção 4 aqui-->
+	<div class="secao-4">
+        <div class="s4-textos">
+            <h1>contato.kitchengenius@genius.com</h1>
+            <p>Powered By - Kitchen Genius</p>
+            <p>
+            <img id="logo-footer" src="/img/Logo.svg"></img>
+            </p>
+            <p>(11) 9 9999-9999</p>
+        </div>
+    </div>
 </body>
 </html>
