@@ -14,7 +14,8 @@ import java.util.List;
 public class PedidoDAO {
     public List<Pedido> findMesa() {
 
-        String SQL = "SELECT * FROM PEDIDOS";
+        String SQL = "SELECT mesa FROM PEDIDOS WHERE andamento = 'preparado'";
+
 
         try {
 
