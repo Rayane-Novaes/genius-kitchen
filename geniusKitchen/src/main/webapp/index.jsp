@@ -1,4 +1,5 @@
 <html>
-<a href="Cozinheiro/tela03adminCozinheiroPedidos.jsp">Admin cozinha</a>
-<a href="Cozinheiro/tela04CadastroDeProduto.jsp">Cadastrar Produto</a>
+    <a href="/tela03adminCozinheiroPedidos.jsp">Admin cozinha</a>
+    <a href="/tela04CadastroDeProduto.jsp">Cadastrar Produto</a>
+    <a href="/home-cardapio">Home cardapio</a>
 </html>
