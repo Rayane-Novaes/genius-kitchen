@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/cadastrar-produto")
 public class CreateGeniusKitchenServlet extends HttpServlet{
 	/**
-	 * 
+	 *
 	 */
 
 	@Override
@@ -26,11 +26,11 @@ public class CreateGeniusKitchenServlet extends HttpServlet{
 
 		String categoriaProduto=httpServletRequest.getParameter("categoria-produto");
 
-		
+
 		Produto produto = new Produto(nomeProduto, categoriaProduto, precoProduto);
 
 		new ProdutoDAO().createProduto(produto);
-		
+
 		httpServletRequest.getRequestDispatcher("index.jsp").forward(httpServletRequest, resp);
-	}		
+	}
 }
