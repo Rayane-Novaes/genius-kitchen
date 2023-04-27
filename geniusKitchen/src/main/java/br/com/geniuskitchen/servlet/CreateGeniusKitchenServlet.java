@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/cadastrar-produto")
 public class CreateGeniusKitchenServlet extends HttpServlet{
 	/**
-	 * 
+	 *
 	 */
 
 	@Override
@@ -26,6 +26,15 @@ public class CreateGeniusKitchenServlet extends HttpServlet{
 		double precoProduto = StringParaDoubleComReplaceVirgula(httpServletRequest.getParameter("preco-produto"));
 
 		String categoriaProduto=httpServletRequest.getParameter("categoria-produto");
+
+
+
+		Produto produto = new Produto(nomeProduto, categoriaProduto, precoProduto);
+
+		new ProdutoDAO().createProduto(produto);
+
+		httpServletRequest.getRequestDispatcher("index.jsp").forward(httpServletRequest, resp);
+	}
 
 		
 		Produto produto = new Produto(UUID.randomUUID().toString(),nomeProduto, categoriaProduto, precoProduto);
@@ -46,4 +55,5 @@ public class CreateGeniusKitchenServlet extends HttpServlet{
 		preco = preco.replace(',', '.');
 		return Double.parseDouble(preco);
 	}
+
 }

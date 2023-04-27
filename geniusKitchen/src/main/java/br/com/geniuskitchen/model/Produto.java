@@ -9,7 +9,9 @@ public class Produto {
     private String categoria;
     private double preco;
 
+
     public Produto(){
+
 
     }
     public Produto(String cod_Produto, String nome, String categoria, double preco) {
@@ -20,12 +22,23 @@ public class Produto {
     }
 
 
+    public Produto(){};
+
+    public Produto(String nome){
+        this.nome = nome;
+    }
+
+    private String categoria;
+    private double preco;
+
+
     public String getCod_Produto() {
         return Cod_Produto;
     }
     public void setCod_Produto(String cod_Produto) {
         Cod_Produto = cod_Produto;
     }
+
 
     public String getNome() {
         return nome;
