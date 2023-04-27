@@ -28,7 +28,7 @@ public class abrirMesaServlet extends HttpServlet {
         String produto = request.getParameter("produto");
         String quantidade = request.getParameter("qtd");
 
-        Pedido pedido = new Pedido(Integer.parseInt(mesa), nomeCLiente);
+        Pedido pedido = new Pedido(Integer.parseInt(mesa));
         Produto p = new Produto(produto);
 
         ItensPedidos itensPedidos = new ItensPedidos(pedido, p, Integer.parseInt(quantidade));
