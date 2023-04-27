@@ -22,4 +22,32 @@
   </servlet-mapping>
 
 
+
+
+  <servlet>
+    <servlet-name>AdminCozinha</servlet-name>
+    <jsp-file>/tela03adminCozinheiroPedidos.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminCozinha</servlet-name>
+    <url-pattern>/admin-cozinheiro</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CadastroProduto</servlet-name>
+    <jsp-file>/tela04CadastroDeProduto.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CadastroProduto</servlet-name>
+    <url-pattern>/cadastro-produto</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>HomeCardapio</servlet-name>
+    <jsp-file>/home-cardapio.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeCardapio</servlet-name>
+    <url-pattern>/home-cardapio</url-pattern>
+  </servlet-mapping>
+
 </web-app>
