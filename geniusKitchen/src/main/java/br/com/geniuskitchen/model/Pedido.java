@@ -10,12 +10,8 @@ public class Pedido {
 
     public Pedido(){}
 
-
-
-
-    public Pedido(int mesa, String andamento, String cliente) {
+    public Pedido(int mesa, String cliente) {
         this.mesa = mesa;
-        this.andamento = andamento;
         this.cliente = cliente;
     }
 
