@@ -22,8 +22,15 @@
             <p>Nenhum pedido encontrado.</p>
           </c:if>
           <c:forEach var="pedido" items="${pedidos}">
-            <p>Mesa: ${pedido.mesa}</p>
-            <button>Finalizar</button>
+            <p>Pedido numero: ${pedido.id} | Mesa: ${pedido.mesa}</p>
+
+            <form action="/update-pedido-concluido" method="post">
+
+                 <input type="hidden" id="id" name="id" value="${pedido.id}">
+                 <button class="btn-finalizar" type="submit">Finalizar</button>
+
+            </form>
+
           </c:forEach>
         </div>
 

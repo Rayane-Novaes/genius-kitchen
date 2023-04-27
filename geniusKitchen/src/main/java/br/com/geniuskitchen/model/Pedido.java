@@ -10,13 +10,23 @@ public class Pedido {
 
     public Pedido(){}
 
-    public Pedido(int mesa, String cliente) {
+
+
+
+    public Pedido(int mesa, String andamento, String cliente, int id) {
         this.mesa = mesa;
+        this.andamento = andamento;
         this.cliente = cliente;
+        this.id = id;
     }
 
-    public Pedido(int mesa) {
+    public Pedido(int mesa, int id) {
         this.mesa = mesa;
+        this.id = id;
+    }
+
+    public Pedido(int id) {
+        this.id = id;
     }
 
     public Pedido(int id, int mesa, String andamento, String cliente) {

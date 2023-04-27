@@ -41,7 +41,7 @@ public class PedidoDAO {
     }
     public List<Pedido> findMesa() {
 
-        String SQL = "SELECT mesa FROM PEDIDOS WHERE andamento = 'preparado'";
+        String SQL = "SELECT pk_pedido, mesa FROM PEDIDOS WHERE andamento = 'preparado'";
 
 
         try {
@@ -60,8 +60,9 @@ public class PedidoDAO {
             while (resultSet.next()) {
 
                 String mesa = resultSet.getString("mesa");
+                String id =  resultSet.getString("pk_pedido");
 
-                Pedido pedido = new Pedido(Integer.parseInt(mesa));
+                Pedido pedido = new Pedido(Integer.parseInt(mesa), Integer.parseInt(id));
                 System.out.println(mesa);
                 pedidos.add(pedido);
 
@@ -81,5 +82,32 @@ public class PedidoDAO {
 
         }
 
+    }
+
+    public void updatePedido(Pedido pedido){
+        String SQL = "UPDATE PEDIDOS SET ANDAMENTO = ? WHERE pk_pedido = ?";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, "concluido");
+            preparedStatement.setString(2, Integer.toString(pedido.getId()));
+            preparedStatement.execute();
+
+            System.out.println("success in update car");
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+            System.out.println("Error: " + e.getMessage());
+
+        }
     }
 }

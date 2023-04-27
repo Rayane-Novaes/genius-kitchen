@@ -61,3 +61,21 @@
 .adicionar-icon:hover{
     background-color: #a74d38;
 }
+
+p{
+    font-size: 25px;
+}
+
+.btn-finalizar{
+    background-color: #E2664A;
+    border: none;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-finalizar:hover{
+    background-color: #a74d38;
+}
