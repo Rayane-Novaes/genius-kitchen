@@ -10,10 +10,7 @@ public class Produto {
     private double preco;
 
 
-    public Produto(){
 
-
-    }
     public Produto(String cod_Produto, String nome, String categoria, double preco) {
         this.Cod_Produto = cod_Produto;
         this.nome = nome;
@@ -28,9 +25,8 @@ public class Produto {
         this.nome = nome;
     }
 
-    private String categoria;
-    private double preco;
-
+    public Produto(String nomeProduto, String categoriaProduto, double precoProduto) {
+    }
 
     public String getCod_Produto() {
         return Cod_Produto;
