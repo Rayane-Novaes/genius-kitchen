@@ -12,29 +12,28 @@
 <body>
 
     <div class="box-principal">
-        <form class="box-formulario">
+        <form  method="POST" action="/nova-mesa"  class="box-formulario">
             <h1 class="titulo"> ABRIR MESA<h1>
 
             <div>
-                <input type="text" id="fname" name="fname" placeholder="cliente" required>
-                <input type="text" id="fname" name="fname" placeholder="mesa" required>
+                <input type="text" id="cliente" name="cliente" placeholder="cliente" required>
+                <input type="text" id="mesa" name="mesa" placeholder="mesa" required>
             </div>
 
             <div>
-                <select name="select" required>
+                <select name="produto" required>
                   <option value="valor1">Comida</option>
-                  <option value="valor2" >Valor 2</option>
-                  <option value="valor3">Valor 3</option>
+                  <option value="valor2" >Bebida</option>
                 </select>
-                <input type="number" id="fname" name="fname" placeholder="Qtd" required>
+                <input type="number" id="qtd" name="qtd" placeholder="Qtd" required>
             </div>
 
             <div>
-                <button>
+                <button type="submit">
                     <img class="cancelar-icon" class="logo" src="images/cancelarIcon.svg" alt="Icone cancelar">
                 </button>
 
-                <button>
+                <button  >
                     <img class="continuar-icon" class="logo" src="images/continuarIcon.svg" alt="Icone continuar">
                 </button>
             </div>

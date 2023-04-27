@@ -12,6 +12,12 @@ public class Produto {
         this.preco = Double.parseDouble(preco);
     }
 
+    public Produto(){};
+
+    public Produto(String nome){
+        this.nome = nome;
+    }
+
     private String categoria;
     private double preco;
 
