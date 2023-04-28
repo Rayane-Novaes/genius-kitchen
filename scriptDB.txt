@@ -1,0 +1,26 @@
+create database genius_kitchen;
+use genius_kitchen;
+
+create table produtos(
+	pk_produto int primary key auto_increment,
+    nome varchar(50) not null,
+    valor decimal(5,2) null,
+    categoria varchar(20)
+);
+
+create table pedidos(
+	pk_pedido int primary key auto_increment,
+    mesa int not null,
+    andamento varchar(50),
+    nome_cliente varchar(50) null
+);
+
+create table itens_pedidos(
+	pk_itens_pedidos int primary key auto_increment,
+    quantidade int not null,
+    fk_produto int,
+    fk_pedido int,
+    foreign key(fk_produto) references produtos(pk_produto),
+    foreign key(fk_pedido) references pedidos(pk_pedido),
+    observacao varchar(50) null
+);
