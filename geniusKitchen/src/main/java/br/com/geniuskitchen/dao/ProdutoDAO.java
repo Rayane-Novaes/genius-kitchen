@@ -14,17 +14,17 @@ public class ProdutoDAO {
 
     public boolean createProduto(Produto produto){
         boolean status = false;
-        String sql = "INSERT INTO Produtos (Cod_Produto, Nome, Categoria, Preco) VALUES (?, ?, ?, ?);";
+        String sql = "INSERT INTO Produtos (nome, categoria, valor) VALUES ( ?, ?, ?);";
 
         try {
 
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test","sa","sa");
 
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setString(1, produto.getCod_Produto());
-            preparedStatement.setString(2, produto.getNome());
-            preparedStatement.setString(3, produto.getCategoria());
-            preparedStatement.setDouble(4, produto.getPreco());
+
+            preparedStatement.setString(1, produto.getNome());
+            preparedStatement.setString(2, produto.getCategoria());
+            preparedStatement.setDouble(3, produto.getPreco());
 
             status = preparedStatement.execute();
 

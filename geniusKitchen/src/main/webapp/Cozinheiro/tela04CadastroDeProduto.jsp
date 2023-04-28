@@ -11,12 +11,12 @@
                 <div class="sub-item">
                     <div class="estrutura-texto">
                         <label class="label-form" for="nome-produto">Nome do produto</label>
-                        <input type="text" name="nome-produto" id="nome">
+                        <input type="text" name="nome-produto" id="nome-produto">
                     </div>
 
                     <div class="estrutura-texto">
                         <label for="preco-produto"> Valor do produto </label>
-                        <input type="text" name="preco-produto" id="preco">
+                        <input type="text" name="preco-produto" id="preco-produto">
                     </div>
                 </div>
 
@@ -24,7 +24,7 @@
             </div>
             <div class="item">
                 <label for="categoria-produto"> Categoria do produto </label>
-                <input type="text" name="categoria-produto" id="categoria">
+                <input type="text" name="categoria-produto" id="categoria-produto">
             </div>
 
             <div class="confirmar">
