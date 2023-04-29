@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url(../img/Imagem-fundo-cabecalho.svg);
+    background-image: url(home/img/Imagem-fundo-cabecalho.svg);
     background-size: cover;
     height: 500px;
     background-position: 50% 80%;
@@ -92,7 +92,7 @@
     justify-content: center;
     align-items: end;
     width: 100%;
-    background-image: url(../img/promocoes.svg);
+    background-image: url(home/img/promocoes.svg);
     background-size: cover;
     height: 500px;
     background-color: #252424;
@@ -239,7 +239,7 @@
     border: 3.5px solid;
     border-color: #515050;
     padding-right: 10px;
-    background-image: url(img/icon-busca-barra-busca.svg);
+    background-image: url(home/img/icon-busca-barra-busca.svg);
     background-repeat: no-repeat;
     background-position: left 25px center;
     background-size: 25px 25px;
@@ -315,6 +315,7 @@
     #campoBuscaHomePage {
         width: 55vw !important;
         min-width: 35vw;
+        background-image: none;
     }
 
     .tab-navegation-home-page {
@@ -328,6 +329,27 @@
     .container-itens-home-page {
         max-width: 80vw;
     }
+}
+@media screen and (max-width: 360px) {
+
+	.container-navbar-texto  {
+		margin-top: 15px!important;
+	}
+    .container-navbar-texto h1 {
+        font-size: 65px!important;
+        line-height: 65px!important;
+    }
+    .tab-navegation-home-page {
+    	font-size: 13px!important;
+    	margin: 0px;
+    }
+    .container-navbar-logo #logoCacebalho{
+    	max-width: 100px!important;
+    }
+    .container-navbar-login {
+    	margin-bottom: 15px!important;
+    }
+    
 }
 
 @media screen and (max-width: 1000px) {

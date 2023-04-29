@@ -1,12 +1,12 @@
-Ôªø<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Cardapio</title>
-    <style><%@include file="/css/site.css"%></style>
-    <style><%@include file="/css/home-cardapio.css"%></style>
+    <style><%@include file="../css/site.css"%></style>
+    <style><%@include file="css/home-cardapio.css"%></style>
 </head>
 <body style="margin: 0px;">
 <div class="home-page">
@@ -16,10 +16,10 @@
                 <div class="container-navbar-login">
                     <div class="btn-login">
                         <a href="#">Login</a>
-                    </div>          qualquer coisa
+                    </div>
                 </div>
                 <div class="container-navbar-logo">
-                <img src="/img/Logo.svg" alt="descri√ß√£o imagem">
+                <img src="home/img/Logo.svg" id="logoCacebalho" alt="descriÁ„o imagem">
                 </div>
                 <div class="container-navbar-texto">
                     <h1>A COMIDA DOS <span>INTELIGENTES</span></h1>
@@ -27,9 +27,10 @@
             </div>
         </div>
     </div>
+</div>
 <div class="secao-2">
         <div class="s2-textos">
-            <h1><span>PROMO√á√ÉO</span> COMBO FAMILIA</h1>
+            <h1><span>PROMO«√O</span> COMBO FAMILIA</h1>
             <p>Nas compras dos combos familia, consiga um <span>desconto de 30% nas sobremesas</span></p>
         </div>
     </div>	
@@ -49,7 +50,7 @@
             <div class="subcontainer-itens-home-page">
                 <div class="container-item-cardapio">
                     <div class="container-imagem-item">
-                        <img id="imagem-item" src="/img/duplo-burger.svg"></img>
+                        <img id="imagem-item" src="home/img/duplo-burger.svg"></img>
                     </div>
                     <div class="container-descricao-item">
                         <h1>Burguer Duplo</h1>
@@ -64,7 +65,7 @@
             <h1>contato.kitchengenius@genius.com</h1>
             <p>Powered By - Kitchen Genius</p>
             <p>
-            <img id="logo-footer" src="/img/Logo.svg"></img>
+            <img id="logo-footer" src="home/img/Logo.svg"></img>
             </p>
             <p>(11) 9 9999-9999</p>
         </div>
