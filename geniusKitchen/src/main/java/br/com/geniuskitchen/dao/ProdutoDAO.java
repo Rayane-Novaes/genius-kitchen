@@ -24,7 +24,7 @@ public class ProdutoDAO {
 
             preparedStatement.setString(1, produto.getNome());
             preparedStatement.setString(2, produto.getCategoria());
-            preparedStatement.setDouble(3, produto.getPreco());
+            preparedStatement.setDouble(3, produto.getValor());
 
             status = preparedStatement.execute();
 

@@ -7,22 +7,22 @@ public class Produto {
     private String id;
     private String nome;
     private String categoria;
-    private double preco;
+    private double valor;
 
 
 
-    public Produto(String nome, String categoria, double preco) {
+    public Produto(String nome, String categoria, double valor) {
 
         this.nome = nome;
         this.categoria = categoria;
-        this.preco = preco;
+        this.valor = valor;
     }
 
-    public Produto(String id, String nome, String categoria, double preco) {
+    public Produto(String id, String nome, String categoria, double valor) {
         this.id = id;
         this.nome = nome;
         this.categoria = categoria;
-        this.preco = preco;
+        this.valor = valor;
     }
 
 
@@ -58,12 +58,12 @@ public class Produto {
         this.categoria = categoria;
     }
 
-    public double getPreco() {
-        return preco;
+    public double getValor() {
+        return valor;
     }
 
-    public void setPreco(double valor) {
-        this.preco = valor;
+    public void setValor(double valor) {
+        this.valor = valor;
     }
 
     @Override
@@ -72,7 +72,7 @@ public class Produto {
                 "Cod_Produto='" + id + '\'' +
                 ", nome='" + nome + '\'' +
                 ", categoria='" + categoria + '\'' +
-                ", preco=" + preco +
+                ", valor=" + valor +
                 '}';
     }
 

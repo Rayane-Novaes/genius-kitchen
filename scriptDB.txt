@@ -22,5 +22,5 @@ create table itens_pedidos(
     fk_pedido int,
     foreign key(fk_produto) references produtos(pk_produto),
     foreign key(fk_pedido) references pedidos(pk_pedido),
-    observacao varchar(50) null
+    observacao varchar(50) null
 );
