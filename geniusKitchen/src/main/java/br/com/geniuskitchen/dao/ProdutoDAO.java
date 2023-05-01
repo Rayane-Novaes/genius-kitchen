@@ -10,13 +10,13 @@ import br.com.geniuskitchen.model.Produto;
 
 public class ProdutoDAO {
 
-    public boolean createProduto(Produto produto){
+    public boolean createProduto(Produto produto) {
         boolean status = false;
         String sql = "INSERT INTO Produtos (nome, categoria, valor) VALUES ( ?, ?, ?);";
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test","sa","sa");
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
@@ -29,11 +29,10 @@ public class ProdutoDAO {
             connection.close();
 
         } catch (Exception ex) {
-                System.out.println(ex.getMessage());
+            System.out.println(ex.getMessage());
         } finally {
             return status;
         }
-
     }
     public ArrayList<Produto> buscarProdutos() {
         boolean status = false;
@@ -46,7 +45,7 @@ public class ProdutoDAO {
              while (result.next()) {
 
                 Produto produto = new Produto(result.getString("PK_PRODUTO"),
-                        result.getString("Nome"), result.getString("Categoria"),
+                        result.getString("NOME"), result.getString("CATEGORIA"),
                         result.getDouble("VALOR"));
                 System.out.println(produto);
                 produtos.add(produto);

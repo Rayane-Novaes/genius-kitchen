@@ -7,7 +7,7 @@
 </head>
 <body>
 <a href = "/listarProdutos">mostrar produtos</a>
-<link rel="stylesheet" href="Cozinheiro/sytle.css">
+<style><%@include file="sytle.css"%></style>
 
 <h1>Pedidos</h1>
 
@@ -21,8 +21,8 @@
                     </div>
 
                     <div class="estrutura-texto">
-                        <label for="preco-produto"> Valor do produto </label>
-                        <input type="text" name="preco-produto" id="preco" value="${param.valor}">
+                        <label for="valor-produto"> Valor do produto </label>
+                        <input type="text" name="valor-produto" id="valor" value="${param.valor}">
                     </div>
                 </div>
 
@@ -49,7 +49,7 @@
         <tr>
             <th> ID </th>
             <th> nome-produto </th>
-            <th> preco-produto </th>
+            <th> valor-produto </th>
             <th> categoria-produto </th>
             <th>actions</th>
         </tr>
@@ -59,13 +59,13 @@
         <tr>
             <td>${produto.id} </td>
             <td>${produto.nome}</td>
-            <td>${produto.preco}</td>
+            <td>${produto.valor}</td>
             <td>${produto.categoria}</td>
             
             <td>
             <form action="/update-produto" method="post">
-                <a href="/Cozinheiro/tela04CadastroDeProduto.jsp?id=${produto.id}&nome=${produto.nome}&valor=${produto.preco}&categoria=${produto.categoria} ">Update</a>                                  
-                </form>
+                href="/cozinheiro/tela04CadastroDeProduto.jsp?id=${produto.id}&nome=${produto.nome}&valor=${produto.valor}&categoria=${produto.categoria} ">Update</a>
+            </form>
             
             </td>
             

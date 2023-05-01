@@ -20,7 +20,7 @@ public class ListGeniusKitchenServlet extends HttpServlet{
         List<Produto> produtos = new ProdutoDAO().buscarProdutos();
         
         req.setAttribute("produtos", produtos);
-        req.getRequestDispatcher("Cozinheiro/tela04CadastroDeProduto.jsp").forward(req, resp);
+        req.getRequestDispatcher("/cozinheiro/tela04CadastroDeProduto.jsp").forward(req, resp);
         
     }
 

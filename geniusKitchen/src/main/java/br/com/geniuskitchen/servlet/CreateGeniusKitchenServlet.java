@@ -22,7 +22,7 @@ public class CreateGeniusKitchenServlet extends HttpServlet{
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String produtoId=req.getParameter("id");
 		String produtoNome = req.getParameter("nome-produto");
-		double produtoPreco = StringParaDoubleComReplaceVirgula(req.getParameter("preco-produto"));
+		double produtoPreco = StringParaDoubleComReplaceVirgula(req.getParameter("valor-produto"));
 
 		String produtoCategoria=req.getParameter("categoria-produto");
 
