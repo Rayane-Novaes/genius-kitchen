@@ -4,7 +4,7 @@ import br.com.geniuskitchen.dao.ProdutoDAO;
 import br.com.geniuskitchen.model.Produto;
 
 import java.io.IOException;
-import java.util.UUID;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,21 +19,24 @@ public class CreateGeniusKitchenServlet extends HttpServlet{
 	 */
 
 	@Override
-	protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String produtoId=req.getParameter("id");
+		String produtoNome = req.getParameter("nome-produto");
+		double produtoPreco = StringParaDoubleComReplaceVirgula(req.getParameter("preco-produto"));
 
-		String nomeProduto = httpServletRequest.getParameter("nome-produto");
+		String produtoCategoria=req.getParameter("categoria-produto");
 
-		double precoProduto = StringParaDoubleComReplaceVirgula(httpServletRequest.getParameter("preco-produto"));
-
-		String categoriaProduto=httpServletRequest.getParameter("categoria-produto");
-
-
-
-		Produto produto = new Produto(nomeProduto, categoriaProduto, precoProduto);
-
-		new ProdutoDAO().createProduto(produto);
-
-		httpServletRequest.getRequestDispatcher("index.jsp").forward(httpServletRequest, resp);
+		ProdutoDAO objProdutoDAO = new ProdutoDAO();
+		Produto objProduto = new Produto(produtoId, produtoNome, produtoCategoria, produtoPreco);
+		
+		if(produtoId.isBlank()) {
+			objProdutoDAO.createProduto(objProduto);
+		} else {
+			objProdutoDAO.updateProduto(objProduto);
+		}
+		resp.sendRedirect("/listarProdutos");
+		
+		//httpServletRequest.getRequestDispatcher("index.jsp").forward(httpServletRequest, resp);
 	}
 
 
