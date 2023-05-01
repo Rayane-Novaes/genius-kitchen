@@ -64,7 +64,7 @@
             
             <td>
             <form action="/update-produto" method="post">
-                href="/cozinheiro/tela04CadastroDeProduto.jsp?id=${produto.id}&nome=${produto.nome}&valor=${produto.valor}&categoria=${produto.categoria} ">Update</a>
+                <a href="/cozinheiro/tela04CadastroDeProduto.jsp?id=${produto.id}&nome=${produto.nome}&valor=${produto.valor}&categoria=${produto.categoria} ">Update</a>
             </form>
             
             </td>
