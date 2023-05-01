@@ -51,7 +51,7 @@
             <th> nome-produto </th>
             <th> valor-produto </th>
             <th> categoria-produto </th>
-            <th>actions</th>
+            <th> actions </th>
         </tr>
 
 <c:forEach var="produto" items="${produtos}">
