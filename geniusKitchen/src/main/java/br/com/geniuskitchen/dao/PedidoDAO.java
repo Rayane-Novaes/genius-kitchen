@@ -1,8 +1,11 @@
 package br.com.geniuskitchen.dao;
 
+import br.com.geniuskitchen.model.ItensPedidos;
 import br.com.geniuskitchen.model.Pedido;
+import br.com.geniuskitchen.model.Produto;
 
 
+import javax.servlet.ServletOutputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -13,9 +16,10 @@ import java.util.List;
 
 public class PedidoDAO {
 
-    public void createPedido(Pedido pedido) {
+    public void createPedido(Pedido pedido, ItensPedidos itensPedidos) {
 
-        String SQL = "INSERT INTO PEDIDOS (NAME) VALUES (?)";
+//        String SQL = "INSERT INTO PEDIDOS (mesa, nome_cliente) VALUES (?, ?)";
+        String SQL2 = "INSERT INTO ITENS_PEDIDOS (fk_produto, quantidade) VALUES (?, ?)";
 
         try {
 
@@ -23,12 +27,23 @@ public class PedidoDAO {
 
             System.out.println("success in database connection");
 
-            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+//            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+//
+//            preparedStatement.setInt(1, pedido.getMesa());
+//            preparedStatement.setString(2, pedido.getCliente());
+//
+//            preparedStatement.execute();
+//
+//            System.out.println("success in insert pedido");
 
-            preparedStatement.setString(1, pedido.getCliente());
-            preparedStatement.execute();
+            PreparedStatement preparedStatement2 = connection.prepareStatement(SQL2);
+//            preparedStatement2.setInt(1, Integer.parseInt(String.valueOf(itensPedidos.getProduto());
+            preparedStatement2.setInt(1,itensPedidos.getId());
+            preparedStatement2.setInt(2, itensPedidos.getQuantidade());
 
-            System.out.println("success in insert pedido");
+            preparedStatement2.execute();
+
+            System.out.println("success in insert itens_pedidos");
 
             connection.close();
 
@@ -99,7 +114,7 @@ public class PedidoDAO {
             preparedStatement.setString(2, Integer.toString(pedido.getId()));
             preparedStatement.execute();
 
-            System.out.println("success in update car");
+            System.out.println("success in update pedido");
 
             connection.close();
 

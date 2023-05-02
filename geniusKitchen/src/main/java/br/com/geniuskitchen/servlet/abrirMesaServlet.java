@@ -23,18 +23,17 @@ public class abrirMesaServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("Cadastrando novo pedido");
 
-        String nomeCLiente = request.getParameter("cliente");
-        String mesa = request.getParameter("mesa");
+        String nomeCliente = request.getParameter("cliente");
+        int mesa = Integer.parseInt(request.getParameter("mesa"));
         String produto = request.getParameter("produto");
         String quantidade = request.getParameter("qtd");
 
-        Pedido pedido = new Pedido(Integer.parseInt(mesa));
+        Pedido pedido = new Pedido(mesa, nomeCliente);
         Produto p = new Produto(produto);
 
         ItensPedidos itensPedidos = new ItensPedidos(pedido, p, Integer.parseInt(quantidade));
 
-        new PedidoDAO().createPedido(pedido);
-        new ProdutoDAO().createProduto(p);
-        System.out.println("___________________________________________");
+        new PedidoDAO().createPedido(pedido, itensPedidos);
+//        new ProdutoDAO().createProduto(p);
     }
 }

@@ -2,8 +2,6 @@ package br.com.geniuskitchen.model;
 
 public class Produto {
 
-
-
     private String id;
     private String nome;
     private String categoria;

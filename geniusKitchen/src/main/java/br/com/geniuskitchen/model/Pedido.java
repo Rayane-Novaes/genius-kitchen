@@ -36,6 +36,11 @@ public class Pedido {
         this.cliente = cliente;
     }
 
+    public Pedido(int mesa, String nomeCliente) {
+        this.mesa = mesa;
+        this.cliente = nomeCliente;
+    }
+
     public int getId() {
         return id;
     }

@@ -22,8 +22,8 @@
 
             <div>
                 <select name="produto" required>
-                  <option value="valor1">Comida</option>
-                  <option value="valor2" >Bebida</option>
+                  <option value="COMIDA">Comida</option>
+                  <option value="BEBIDA" >Bebida</option>
                 </select>
                 <input type="number" id="qtd" name="qtd" placeholder="Qtd" required>
             </div>
