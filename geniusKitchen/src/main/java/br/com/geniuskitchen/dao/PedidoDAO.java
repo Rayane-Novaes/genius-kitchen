@@ -141,7 +141,7 @@ public class PedidoDAO {
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
-            preparedStatement.setString(1, "pendente");
+            preparedStatement.setString(1, "preparado");
             preparedStatement.setString(2, Integer.toString(pedido.getId()));
             preparedStatement.execute();
 

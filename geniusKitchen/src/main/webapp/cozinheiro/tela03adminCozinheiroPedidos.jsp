@@ -14,7 +14,7 @@
     </div>
 
     <div class="logo">
-        <img class="logo-2" src="img/Logo%205.png" alt="logo genius kitchen">
+        <img class="logo-2" src="cozinheiro/img/Logo%205.png" alt="logo genius kitchen">
     </div>
 
     <h1>PEDIDOS</h1>
