@@ -1,24 +1,22 @@
 package br.com.geniuskitchen.dao;
 
-import br.com.geniuskitchen.model.Produto;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import java.util.List;
+
+import br.com.geniuskitchen.model.Produto;
 
 public class ProdutoDAO {
 
-    public boolean createProduto(Produto produto){
+    public boolean createProduto(Produto produto) {
         boolean status = false;
         String sql = "INSERT INTO Produtos (nome, categoria, valor) VALUES ( ?, ?, ?);";
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test","sa","sa");
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
@@ -31,15 +29,14 @@ public class ProdutoDAO {
             connection.close();
 
         } catch (Exception ex) {
-                System.out.println(ex.getMessage());
+            System.out.println(ex.getMessage());
         } finally {
             return status;
         }
-
     }
     public ArrayList<Produto> buscarProdutos() {
         boolean status = false;
-        String sql = "SELECT * FROM Produtos;";
+        String sql = "SELECT * FROM Produtos";
         ArrayList<Produto> produtos = new ArrayList<>();
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test","sa","sa");
@@ -47,9 +44,9 @@ public class ProdutoDAO {
             ResultSet result = preparedStatement.executeQuery();
              while (result.next()) {
 
-                Produto produto = new Produto(result.getString("Cod_Produto"),
-                        result.getString("Nome"), result.getString("Categoria"),
-                        result.getDouble("Preco"));
+                Produto produto = new Produto(result.getString("PK_PRODUTO"),
+                        result.getString("NOME"), result.getString("CATEGORIA"),
+                        result.getDouble("VALOR"));
                 System.out.println(produto);
                 produtos.add(produto);
              }
@@ -66,5 +63,38 @@ public class ProdutoDAO {
         return produtos;
     }
 
+    public void updateProduto(Produto produto) {
+    	String SQL = "UPDATE PRODUTOS SET nome = ?, valor=?, categoria=? where PK_PRODUTO = ?";
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            
+            preparedStatement.setString(1, produto.getId());
+            preparedStatement.setString(2, produto.getNome());
+            
+            preparedStatement.setDouble(3, produto.getValor());
+            preparedStatement.setString(4, produto.getCategoria());
+
+            preparedStatement.execute();
+
+            System.out.println("success in update product");
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+            System.out.println("Error: " + e.getMessage());
+
+        }
+
+
+    }
 
 }
+
