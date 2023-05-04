@@ -9,7 +9,7 @@
 <a href = "/listarProdutos">mostrar produtos</a>
 <style><%@include file="sytle.css"%></style>
 
-<h1>Pedidos</h1>
+<h1> Produtos </h1>
 
     <div class="cadastro">
         <form method="post" action="/cadastrar-produto">

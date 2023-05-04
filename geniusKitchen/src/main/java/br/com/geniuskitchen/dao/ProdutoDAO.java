@@ -74,11 +74,11 @@ public class ProdutoDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
             
-            preparedStatement.setString(1, produto.getId());
-            preparedStatement.setString(2, produto.getNome());
+            preparedStatement.setString(1, produto.getNome());
+            preparedStatement.setDouble(2, produto.getValor());
             
-            preparedStatement.setDouble(3, produto.getValor());
-            preparedStatement.setString(4, produto.getCategoria());
+            preparedStatement.setString(3, produto.getCategoria());
+            preparedStatement.setString(4, produto.getId());
 
             preparedStatement.execute();
 
