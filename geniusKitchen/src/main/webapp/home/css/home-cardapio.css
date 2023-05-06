@@ -2,7 +2,9 @@
     display: flex;
     flex-direction: column;
 }
-
+.item-cardapio:hover {
+	cursor: pointer;
+}
 .cabecalho {
     display: flex;
     flex-direction: column;
@@ -250,15 +252,16 @@
 
 .container-itens-home-page {
     display: flex;
-    max-width: 65vw;
+    flex-wrap: wrap;
+  	justify-content: center;
+    max-width: 65vw!important;
     margin-top: 48px;
+    gap: 40px;
 }
 
 .subcontainer-itens-home-page {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 48px;
+    flex-direction: column;
     justify-content: center;
 
 }
@@ -350,6 +353,19 @@
     	margin-bottom: 15px!important;
     }
     
+}
+@media screen and (max-width: 768px) {
+  .container-item-cardapio {
+    width: 48%;
+    margin: 1%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-item-cardapio {
+    width: 100%;
+    margin: 2%;
+  }
 }
 
 @media screen and (max-width: 1000px) {

@@ -17,25 +17,23 @@ import br.com.geniuskitchen.model.ItemCardapio;
 
 @WebServlet("/inicio")
 public class HomePageServlet extends HttpServlet {
+	
+	private CardapioDAO _dao;
+	
+	@Override
+	public void init() throws ServletException {
+		_dao = new CardapioDAO();
+	}
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
+
 		System.out.println("\nGET - Inicio");
-		
-		CardapioDAO _dao = new CardapioDAO();
-		List<ItemCardapio> items = new ArrayList<>();
-		
-		try {
-			
-			items = _dao.buscarItemsDoCardapio();
-			
-		} catch (SQLException ex) {
-			
-			System.err.println("\n" + ex.getMessage());
-		}
-		
-		req.setAttribute("items", items);
+		List<ItemCardapio> listaItems = new ArrayList<>();
+
+		listaItems = _dao.buscarItemsDoCardapio();
+
+		req.setAttribute("listaItems", listaItems);
 		RequestDispatcher dispatcher = req.getRequestDispatcher("home/home-cardapio.jsp");
 		dispatcher.forward(req, resp);
 	}

@@ -6,10 +6,10 @@ $(function() {
 
 function filtrarPorBotoes(){
 	
-	$('.item-cardapio').click(function() {
-	
+	$('.item-cardapio').click(function(event) {
 	var tipo = $(this).data("tipo");
-	
+	event.preventDefault();
+	console.log(tipo);
 	if(tipo !== "TODOS") {
 				
 		$(".container-item-cardapio").hide();
