@@ -70,7 +70,7 @@ public class CriarItemCardapioServlet extends HttpServlet {
 	    
 	    boolean resultado = _dao.inserirItem(item);
 	    
-	    if(resultado) mensagem = String.format("O item %s, foi inserido com sucesso. Seu código é: %s", item.getNome(), item.getCodigoItemCardapio());
+	    if(resultado) mensagem = String.format("O item <strong>%s</strong>, foi inserido com sucesso. Seu código é: <strong>%s</strong>", item.getNome(), item.getCodigoItemCardapio());
 	    else mensagem = String.format("Não foi possível inserir o item %s, tente novamente mais tarde.<br>Se o problema persistir, contate um administrador do sistema!<br>", item.getNome());
 	    
 		RequestDispatcher dispatcher = req.getRequestDispatcher("home/criar-item-cardapio.jsp");
