@@ -28,5 +28,5 @@ public class LoginServlet extends HttpServlet {
 		System.out.println("Senha: " + req.getParameter("senha"));
 		super.doPost(req, resp);
 	}
-
+	
 }
