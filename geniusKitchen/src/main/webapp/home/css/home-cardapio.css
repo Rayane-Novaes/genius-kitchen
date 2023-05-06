@@ -276,6 +276,14 @@
     min-height: 300px;
     padding: 8px;
 }
+.container-item-cardapio:hover {
+	cursor: pointer;
+   border: 1px solid #c95931;
+}
+.container-item-cardapio .container-imagem-item #imagem-item:hover {
+	   border: 1px solid #c95931;
+}
+
 .container-imagem-item {
     display: flex;
     flex-direction: row;
@@ -365,6 +373,18 @@
   .container-item-cardapio {
     width: 100%;
     margin: 2%;
+  }
+  #logoCacebalho {
+  max-width: 90px!important;
+  }
+  .container-tab-navegation-home-page {
+  	gap:8px;
+  	max-width: 100vw;
+  	margin: 0px;
+  }
+  .tab-navegation-home-page {
+    	gap:8px;
+  	max-width: 95vw;
   }
 }
 

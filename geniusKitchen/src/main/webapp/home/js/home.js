@@ -1,5 +1,6 @@
 
 $(function() {
+	$('.home-page').fadeIn('slow');
 	filtrarPorBotoes();
 	filtrarPorBusca();
 });
@@ -12,12 +13,12 @@ function filtrarPorBotoes(){
 	console.log(tipo);
 	if(tipo !== "TODOS") {
 				
-		$(".container-item-cardapio").hide();
-		$(".container-item-cardapio[data-tipo='" + tipo +"']").show();	
+		$(".container-item-cardapio").fadeIn(800).hide();
+		$(".container-item-cardapio[data-tipo='" + tipo +"']").fadeIn(800).show();	
 		
 	} else {
 		
-		$(".container-item-cardapio").show();
+		$(".container-item-cardapio").fadeIn(800).show();
 	}
  });
 	
