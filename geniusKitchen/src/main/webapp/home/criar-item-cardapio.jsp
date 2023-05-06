@@ -11,12 +11,29 @@
 	</head>
 	<body style="padding: 40px;">
 		<h1>Criar item cardápio</h1>
-		<br>
-		<div>
-		<% String mensagem = (String) request.getAttribute("mensagem"); %>
+				<% String mensagem = (String) request.getAttribute("mensagem"); %>
 		<% if (mensagem != null && !mensagem.isEmpty()) { %>
-		  <p><%= mensagem %></p>
+		  <p style="background-color: #b0db9d; padding: 24px; max-width: 700px;"><%= mensagem %></p>
 		<% } %>
+		<br>
+		<h4 style="color: red; text-decoration: underline;">Certifique-se que você possui a tabela criada na nase de dados.<br>Segue abaixo script de criação da tabela.</h4><br>
+		<pre class="language-sql" style="background-color: #000; color: #fff; max-width: 700px;"><code>
+		// Script da tabela
+		
+		CREATE TABLE item_cardapio (
+		  codigo_item_cardapio VARCHAR(18)NOT NULL,
+		  nome VARCHAR(255) NOT NULL,
+		  tipo VARCHAR(20) NOT NULL,
+		  preco DOUBLE PRECISION NOT NULL,
+		  url_imagem VARCHAR(255) NOT NULL,
+		  palavras_chave VARCHAR(255) NOT NULL,
+		  
+		  PRIMARY KEY (codigo_item_cardapio, nome) #Com indice
+		  PRIMARY KEY (codigo_item_cardapio)       #Sem indice
+		);
+		}
+		</code></pre>
+		<div>
 
 		<br>
 		</div>
