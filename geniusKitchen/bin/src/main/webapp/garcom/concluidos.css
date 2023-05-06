@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    margin:0;
+    background-color: #181818;
+    font-family: Inter;
+
+}
+
+.box-principal{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-pedidos{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#FFFFFF;
+    margin-bottom: 80px;
+
+}
+
+.logo{
+    margin-top: 40px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+
+}
+
+.titulo{
+    color: #E2664A;
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-family: 'Staatliches', serif;
+}
+
+.box-button{
+
+    width:50vw;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.adicionar-icon{
+    background-color: #E2664A;
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.adicionar-icon:hover{
+    background-color: #a74d38;
+}
+
+p{
+    font-size: 25px;
+}
+
+.btn-finalizar{
+    background-color: #E2664A;
+    border: none;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-finalizar:hover{
+    background-color: #a74d38;
+}
