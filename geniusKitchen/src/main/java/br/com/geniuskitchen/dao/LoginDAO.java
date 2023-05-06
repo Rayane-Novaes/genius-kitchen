@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import br.com.geniuskitchen.dao.dbconnection.DatabaseConnection;
 import br.com.geniuskitchen.model.Funcionario;
 
 public class LoginDAO {
@@ -13,7 +12,7 @@ public class LoginDAO {
 	
 	public LoginDAO() {
 		
-		_connection = DatabaseConnection.getInstance().getConnection();
+		
 		
 	}
 	
@@ -24,13 +23,13 @@ public class LoginDAO {
 		PreparedStatement stmt = _connection.prepareStatement(sql);
 		
 		System.out.println("Código: " + funcionario.getCodigoFuncionario() + "\nNome: " + funcionario.getNome() + "\nE-mail: " + funcionario.getEmail()
-		+ "\nSenha: " + funcionario.getSenha() + "\nTipo: " + funcionario.tipo.toString());
+		+ "\nSenha: " + funcionario.getSenha());
 		
         stmt.setString(1, funcionario.getCodigoFuncionario());
         stmt.setString(2, funcionario.getNome());
         stmt.setString(3, funcionario.getEmail());
         stmt.setString(4, funcionario.getSenha());
-        stmt.setString(5, funcionario.tipo.toString());
+        
         
         int linhasAfetadas = stmt.executeUpdate();
         

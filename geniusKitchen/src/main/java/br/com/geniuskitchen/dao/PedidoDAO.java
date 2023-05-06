@@ -15,7 +15,7 @@ public class PedidoDAO {
 
     public void createPedido(Pedido pedido) {
 
-        String SQL = "INSERT INTO pedido (NAME) VALUES (?)";
+        String SQL = "INSERT INTO PEDIDOS (NAME) VALUES (?)";
 
         try {
 

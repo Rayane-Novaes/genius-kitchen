@@ -22,6 +22,7 @@ create table itens_pedidos(
     fk_pedido int,
     foreign key(fk_produto) references produtos(pk_produto),
     foreign key(fk_pedido) references pedidos(pk_pedido),
+<<<<<<< HEAD
     observacao varchar(50) null
 );
 
@@ -53,3 +54,7 @@ CREATE TABLE item_cardapio (
 INSERT INTO ItemCardapio (Nome, Tipo, Preco, URLImagem) VALUES ('Duplo Burguer', 'Lanche', 27.44, 'https://raw.githubusercontent.com/Rayane-Novaes/genius-kitchen/4fade3e3a2bc688bb74fff4c92112b0feae08f4c/imagens/duplo-burger.svg');
 INSERT INTO ItemCardapio (Nome, Tipo, Preco, URLImagem) VALUES ('Choop Colorado', 'Bebida', 6.99, 'https://raw.githubusercontent.com/Rayane-Novaes/genius-kitchen/9f1ee48c3a4c2719cb23a3e6952948c677cfeb28/imagens/caneca-chopp-colorado.svg');
 INSERT INTO ItemCardapio (Nome, Tipo, Preco, URLImagem) VALUES ('Pudim de leite', 'Sobremesa', 15.49, 'https://raw.githubusercontent.com/Rayane-Novaes/genius-kitchen/main/imagens/pudim-de-leite.svg');
+=======
+    observacao varchar(50) null
+);
+>>>>>>> 83b42fc4cd9e423e1f73326d78986c786d72175e

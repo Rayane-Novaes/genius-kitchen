@@ -65,7 +65,7 @@
                     <div class="container-descricao-item">
                         <h1>${item.getNome()}</h1>
                         <p>R$ ${item.getPreco()}</p>
-                        <span style="display: none;">${item.getPalavrasChavesBusca()}</span>
+                        <span style="display: none;">${item.getPalavraChavesBusca()}</span>
 	                    <p>${item.getTipo()}</p>
                     </div>
                 </div>

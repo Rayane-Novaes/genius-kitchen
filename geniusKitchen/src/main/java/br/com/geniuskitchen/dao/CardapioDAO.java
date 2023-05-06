@@ -6,9 +6,8 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.geniuskitchen.dao.dbconnection.DatabaseConnection;
+import br.com.geniuskitchen.dao.connection.DatabaseConnection;
 import br.com.geniuskitchen.model.ItemCardapio;
-import br.com.geniuskitchen.model.enums.TipoItemCardapio;
 
 /**
  * Classe responsável pela interação com o banco de dados em relação aos itens do cardápio.
@@ -73,8 +72,8 @@ public class CardapioDAO {
         String codigoItemCardapio = item.getCodigoItemCardapio();
         String urlImagem = item.getURLImagem();
         String nome = item.getNome();
-        String tipo = item.getTipo();
-        String palavrasChave = item.getPalavrasChavesBusca();
+        String tipo = item.getTipo().toString();
+        String palavrasChave = item.getPalavraChavesBusca();
         double preco = item.getPreco();
         var status = false;
 

@@ -2,10 +2,13 @@ package br.com.geniuskitchen.model;
 
 import java.util.UUID;
 
-import br.com.geniuskitchen.model.enums.TipoItemCardapio;
+import br.com.geniuskitchen.enums.TipoItemCardapio;
 
 /**
  * Representa um item do cardápio.
+ * @author José Victor Vieira
+ * @version 1.0
+ * @since 05/05/2023
  */
 public class ItemCardapio {
 
@@ -23,14 +26,14 @@ public class ItemCardapio {
 	 * @param nome      O nome do item do cardápio.
 	 * @param tipo      O tipo do item do cardápio.
 	 * @param preco     O preço do item do cardápio.
-	 * @param uRLImagem A URL da imagem do item do cardápio.
+	 * @param URLImagemmmmmmm A URL da imagem do item do cardápio.
 	 */
-	public ItemCardapio(String nome, String tipo, double preco, String uRLImagem, String palavrasChaveBusca) {
+	public ItemCardapio(String nome, String tipo, double preco, String URLImagemmmmmmm, String palavrasChaveBusca) {
 		this.codigoItemCardapio = UUID.randomUUID().toString().substring(0, 18);
 		this.nome = nome;
 		this.tipo = TipoItemCardapio.valueOf(tipo);
 		this.preco = preco;
-		this.URLImagem = uRLImagem;
+		this.URLImagem = URLImagemmmmmmm;
 		this.palavrasChavesBusca = palavrasChaveBusca;
 	}
 
@@ -42,15 +45,15 @@ public class ItemCardapio {
 	 * @param nome               O nome do item do cardápio.
 	 * @param tipo               O tipo do item do cardápio.
 	 * @param preco              O preço do item do cardápio.
-	 * @param uRLImagem          A URL da imagem do item do cardápio.
+	 * @param URLImagemmmmmmm          A URL da imagem do item do cardápio.
 	 * @param palavrasChavesBusca 
 	 */
-	public ItemCardapio(String codigoItemCardapio, String nome, String tipo, double preco, String uRLImagem, String palavrasChavesBusca) {
+	public ItemCardapio(String codigoItemCardapio, String nome, String tipo, double preco, String URLImagem, String palavrasChavesBusca) {
 		this.codigoItemCardapio = codigoItemCardapio;
 		this.nome = nome;
 		this.tipo = TipoItemCardapio.valueOf(tipo);
 		this.preco = preco;
-		this.URLImagem = uRLImagem;
+		this.URLImagem = URLImagem;
 		this.palavrasChavesBusca = palavrasChavesBusca;
 	}
 
@@ -66,14 +69,6 @@ public class ItemCardapio {
 		this.nome = nome;
 	}
 
-	public String getTipo() {
-		return tipo.toString().toUpperCase();
-	}
-
-	public void setTipo(TipoItemCardapio tipo) {
-		this.tipo = tipo;
-	}
-
 	public double getPreco() {
 		return preco;
 	}
@@ -82,19 +77,25 @@ public class ItemCardapio {
 		this.preco = preco;
 	}
 
+
 	public String getURLImagem() {
 		return URLImagem;
 	}
 
-	public void setURLImagem(String uRLImagem) {
-		URLImagem = uRLImagem;
+	public void setURLImagemmmmmm(String URLImagem) {
+		this.URLImagem = URLImagem;
 	}
 
-	public String getPalavrasChavesBusca() {
+	public String getPalavraChavesBusca() {
 		return palavrasChavesBusca;
 	}
 
-	public void setPalavrasChavesBusca(String palavrasChavesBusca) {
-		this.palavrasChavesBusca = palavrasChavesBusca;
+	public void setPalavraChavesBusca(String palavraChavesBusca) {
+		this.palavrasChavesBusca = palavraChavesBusca;
 	}
+
+	public String getTipo() {
+		return tipo.toString();
+	}
+
 }

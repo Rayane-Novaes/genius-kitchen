@@ -2,24 +2,20 @@ package br.com.geniuskitchen.model;
 
 import java.util.UUID;
 
-import br.com.geniuskitchen.model.enums.Tipo;
-
 public class Funcionario {
 	
 	private String codigoFuncionario;
 	private String nome;
 	private String email ;
 	private String senha;
-	public Tipo tipo;
 
-	public static Funcionario Create(String nome, String email, String senha, Tipo tipo) {
+	public static Funcionario Create(String nome, String email, String senha) {
 		
 		return new Funcionario() {{
 			this.setCodigoFuncionario(UUID.randomUUID().toString());
 			this.setNome(nome);
 			this.setEmail(email);
 			this.setSenha(senha);
-			this.tipo = tipo;
 		}};
 	}
 	

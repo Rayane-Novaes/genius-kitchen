@@ -9,8 +9,5 @@
         <module name="geniusKitchen" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="geniusKitchen" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
