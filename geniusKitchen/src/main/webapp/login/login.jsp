@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
     <style><%@include file="css/login.css"%></style>
 </head>
 <body>
     <div class="container">
-    <form action="login" method="post">
-       	<label for="nome">Nome completo:</label>
-    	<input name="nome" placeholder="Nome">
-    	<label for="email">Email:</label>
-    	<input name="email" placeholder="E-mail">
-    	<label for="senha">Senha:</label>
-    	<input name="senha" placeholder="Senha">
-    	
-    	<button type="submit">&nbsp;Entrar&nbsp;</button>    
-    </form>
-    </div>
-</body>
+            <div class="img-container">
+                <img class="img-login" src="login/img/imagem-login.svg" alt="Imagem login">
+            </div>
+            <div class="img-container">
+                <img class="logo-login" src="login/img/Logo%205.png" alt="logo login">
+            </div>
+            <form>
+                <div class="input-container">
+                    <label for="username">Login</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-container">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Confirmar</button>
+            </form>
+        </div>
+  </body>
 </html>
