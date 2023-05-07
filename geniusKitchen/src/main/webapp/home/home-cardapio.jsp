@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Cardápio</title>
+    <title>Home - Cardï¿½pio</title>
     <style>
         <%@include file="../css/site.css" %>
     </style>
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <div class="container-navbar-logo">
-                        <img class="animate__animated animate__backInDown" id="logoCacebalho" src="https://raw.githubusercontent.com/Rayane-Novaes/genius-kitchen/19dfe5662fd214fac684a777c53ae303f7d0f443/imagens/Logo.svg" alt="descrição imagem">
+                        <img class="animate__animated animate__backInDown" id="logoCacebalho" src="https://raw.githubusercontent.com/Rayane-Novaes/genius-kitchen/19dfe5662fd214fac684a777c53ae303f7d0f443/imagens/Logo.svg" alt="descriï¿½ï¿½o imagem">
                     </div>
                     <div class="container-navbar-texto">
                         <h1 class="animate__animated animate__fadeInLeft">A COMIDA DOS <span>INTELIGENTES</span></h1>
@@ -39,7 +39,7 @@
     </div>
     <div class="secao-2">
         <div class="s2-textos">
-            <h1 class="animate__animated animate__fadeInRight"><span>PROMOÇÃO</span> COMBO FAMILIA</h1>
+            <h1 class="animate__animated animate__fadeInRight"><span>PROMOï¿½ï¿½O</span> COMBO FAMILIA</h1>
             <p class="animate__animated animate__fadeInLeft">Nas compras dos combos familia, consiga um <span>desconto de 30% nas sobremesas</span></p>
         </div>
     </div>
