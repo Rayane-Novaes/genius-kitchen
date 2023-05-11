@@ -10,8 +10,6 @@
     <div class="container">
             <div class="img-container">
                 <img class="img-login" src="login/img/imagem-login.svg" alt="Imagem login">
-            </div>
-            <div class="img-container">
                 <img class="logo-login" src="login/img/Logo%205.png" alt="logo login">
             </div>
             <form>
@@ -23,7 +21,10 @@
                     <label for="password">Senha</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <button type="submit" class="btn">Confirmar</button>
+                       <button type="submit" class="btn">Confirmar</button>
+                <div class="esqueci-senha">
+                       <a class="esqueci-senha" data-tipo="esqueci-senha">esqueci senha</a>
+                </div>
             </form>
         </div>
   </body>
