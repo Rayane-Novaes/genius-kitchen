@@ -12,7 +12,7 @@ public class ProdutoDAO {
 
     public boolean createProduto(Produto produto) {
         boolean status = false;
-        String sql = "INSERT INTO Produtos (nome, categoria, valor) VALUES ( ?, ?, ?);";
+        String sql = "INSERT INTO Produtos (nome, categoria, valor) VALUES (?, ?, ?);";	
 
         try {
 
@@ -20,6 +20,7 @@ public class ProdutoDAO {
 
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
+//            preparedStatement.setString(1, produto.getId());
             preparedStatement.setString(1, produto.getNome());
             preparedStatement.setString(2, produto.getCategoria());
             preparedStatement.setDouble(3, produto.getValor());

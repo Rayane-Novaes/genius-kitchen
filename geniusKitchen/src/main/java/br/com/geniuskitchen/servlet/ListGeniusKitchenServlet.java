@@ -9,12 +9,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.com.geniuskitchen.dao.CardapioDAO;
 import br.com.geniuskitchen.dao.ProdutoDAO;
 import br.com.geniuskitchen.model.Produto;
 
 
 @WebServlet("/listarProdutos")
 public class ListGeniusKitchenServlet extends HttpServlet{
+ProdutoDAO dataProduto;
+	public void init() throws ServletException {
+		dataProduto=new ProdutoDAO();
+	}
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Produto> produtos = new ProdutoDAO().buscarProdutos();

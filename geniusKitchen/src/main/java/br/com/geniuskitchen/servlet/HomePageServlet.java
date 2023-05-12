@@ -19,13 +19,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.geniuskitchen.dao.CardapioDAO;
-import br.com.geniuskitchen.model.ItemCardapio;
+import br.com.geniuskitchen.dao.ProdutoDAO;
+import br.com.geniuskitchen.model.Produto;
 
 @WebServlet("/inicio")
 public class HomePageServlet extends HttpServlet {
 	
-	private CardapioDAO _dao;
+	private ProdutoDAO data;
 
 	/**
 	 * Método init() que é executado apenas uma vez na criação do objeto. 
@@ -33,7 +33,7 @@ public class HomePageServlet extends HttpServlet {
 	 */
 	@Override
 	public void init() throws ServletException {
-		_dao = new CardapioDAO();
+		data = new ProdutoDAO();
 	}
 
 	/**
@@ -50,9 +50,9 @@ public class HomePageServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 		System.out.println("\nGET - Inicio");
-		List<ItemCardapio> listaItems = new ArrayList<>();
+		List<Produto> listaItems = new ArrayList<>();
 
-		listaItems = _dao.buscarItemsDoCardapio();
+		listaItems = data.buscarProdutos();
 
 		req.setAttribute("listaItems", listaItems);
 		RequestDispatcher dispatcher = req.getRequestDispatcher("home/home-cardapio.jsp");

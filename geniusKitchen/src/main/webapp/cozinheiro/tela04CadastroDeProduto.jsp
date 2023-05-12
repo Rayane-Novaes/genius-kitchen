@@ -6,7 +6,7 @@
     <title>Cadastro de produto</title>
 </head>
 <body>
-<a href = "/listarProdutos">mostrar produtos</a>
+<a href = "/inicio">mostrar produtos</a>
 <style><%@include file="sytle.css"%></style>
 
 <h1> Produtos </h1>

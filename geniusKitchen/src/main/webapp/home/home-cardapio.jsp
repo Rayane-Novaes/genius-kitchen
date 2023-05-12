@@ -59,15 +59,15 @@
 
         <div class="container-itens-home-page">
             <c:forEach var="item" items="${listaItems}">
-                <div class="container-item-cardapio" data-tipo="${item.getTipo()}">
+                <div class="container-item-cardapio" data-tipo="${item.getCategoria()}">
                     <div class="container-imagem-item">
-                        <img id="imagem-item" src="${item.getURLImagem() }"></img>
+                        <img id="imagem-item" src=""></img>
                     </div>
                     <div class="container-descricao-item">
                         <h1>${item.getNome()}</h1>
-                        <p>R$ ${item.getPreco()}</p>
-                        <span style="display: none;">${item.getPalavraChavesBusca()}</span>
-	                    <p>${item.getTipo()}</p>
+                        <p>R$ ${item.getValor()}</p>
+                        <span style="display: none;"></span>
+	                    <p>${item.getCategoria()}</p>
                     </div>
                 </div>
             </c:forEach>
