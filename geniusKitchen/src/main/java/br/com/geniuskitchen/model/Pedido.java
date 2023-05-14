@@ -7,9 +7,10 @@ public class Pedido {
 
     private String cliente;
 
+    private ItensPedidos itensPedidos;
+
 
     public Pedido(){}
-
 
 
     public Pedido(int mesa, int id, String cliente){
@@ -39,6 +40,13 @@ public class Pedido {
         this.mesa = mesa;
         this.andamento = andamento;
         this.cliente = cliente;
+    }
+
+    public Pedido(int id, int mesa, String nome, ItensPedidos itensPedidos) {
+        this.id = id;
+        this.mesa = mesa;
+        this.cliente = nome;
+        this.itensPedidos = itensPedidos;
     }
 
     public int getId() {
@@ -71,5 +79,13 @@ public class Pedido {
 
     public void setCliente(String cliente) {
         this.cliente = cliente;
+    }
+
+    public ItensPedidos getItensPedidos() {
+        return itensPedidos;
+    }
+
+    public void setItensPedidos(ItensPedidos itensPedidos) {
+        this.itensPedidos = itensPedidos;
     }
 }

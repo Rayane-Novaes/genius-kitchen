@@ -1,12 +1,11 @@
 package br.com.geniuskitchen.dao;
 
+import br.com.geniuskitchen.model.ItensPedidos;
 import br.com.geniuskitchen.model.Pedido;
+import br.com.geniuskitchen.dao.ItensPedidosDAO;
 
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -105,11 +104,15 @@ public class PedidoDAO {
 
             while (resultSet.next()) {
 
-                String mesa = resultSet.getString("mesa");
                 String id =  resultSet.getString("pk_pedido");
+                String mesa = resultSet.getString("mesa");
                 String nome =  resultSet.getString("nome_cliente");
 
-                Pedido pedido = new Pedido(Integer.parseInt(mesa), Integer.parseInt(id), nome);
+                ItensPedidosDAO itens = new ItensPedidosDAO();
+                ItensPedidos item = itens.buscarItens(id);
+
+                Pedido pedido = new Pedido(Integer.parseInt(id),Integer.parseInt(mesa), nome, item);
+
                 System.out.println(mesa);
                 pedidos.add(pedido);
 
@@ -130,6 +133,8 @@ public class PedidoDAO {
         }
 
     }
+
+
     public void updatePendente(Pedido pedido){
         String SQL = "UPDATE PEDIDOS SET ANDAMENTO = ? WHERE pk_pedido = ?";
 

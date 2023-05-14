@@ -36,7 +36,7 @@
 
                      <div class="format-comida">
                          <p> <strong>Comidas a serem preparada:</strong></p>
-                         <p> </p>
+                         <p>{pendente.item.produto} </p>
                      </div>
 
                       <form action="/update-pedido-preparado" method="post">
@@ -46,7 +46,6 @@
 
                 </div>
 
-               <img class="teste" src="cozinheiro/img/decoracao.png" alt="logo genius kitchen">
 
             </div>
 

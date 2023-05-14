@@ -13,7 +13,9 @@
     color: #ffff;
     font-family: 'Inter', 'Arial';
 }
-
+body{
+    margin: 60px;
+}
 
 .estrutura{
     display: flex;
@@ -39,7 +41,6 @@
     background: #2F3030;
     display: flex;
     flex-direction: column;
-    margin: 40px;
     border-radius: 30px;
     padding: 20px;
     justify-content: center;
@@ -74,7 +75,6 @@ body{
     gap: 40px;
     align-items: center;
     padding: 10px;
-    padding-left: 40px;
     border-radius: 45px;
 }
 
@@ -94,7 +94,6 @@ h1{
     font-family: 'Staatliches', serif;
     text-align: center;
     font-size: 66px;
-    margin-bottom: 50px;
 }
 h2, p {
     font-family: 'Inter', serif;
