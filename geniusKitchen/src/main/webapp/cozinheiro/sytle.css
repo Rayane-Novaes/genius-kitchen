@@ -169,6 +169,14 @@ button{
     margin: 20px;
 }
 
+.decoracao-img{
+    position: absolute;
+    top: -60px;
+    left: -120px;
+    z-index: 1;
+    pointer-events: none;
+}
+
 .tabela, td, tr, th{
     background-color: #2c2b2b;
     padding: 10px;

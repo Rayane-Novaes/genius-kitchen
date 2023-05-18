@@ -6,8 +6,7 @@
 <style><%@include file="sytle.css"%></style>
 
 <body>
-    <span class="decoracao"><span>
-
+    <img class="decoracao-img class="decoracao-img" src="/cozinheiro/img/decoracao.png" alt="decoração">
     <div class="estrutura">
 
         <a  class="botao-link" href="cozinheiro/tela04CadastroDeProduto.jsp">Cadastrar Produto</a>

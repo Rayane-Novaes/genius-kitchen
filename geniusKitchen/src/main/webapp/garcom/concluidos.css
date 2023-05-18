@@ -21,10 +21,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
     flex-direction: column;
     color:#FFFFFF;
     margin-bottom: 80px;
+    padding: 20px;
+}
 
+.detalhes-imagem{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    min-width: 100px;
+    z-index: 1;
+}
+
+
+.estrutura-pedidos{
+    padding: 20px;
+    display: flex;
+    border-radius: 36px;
+    gap: 60px;
+    background: #1f1f1f;
+    border: solid #5E5E5E 1px;
+    align-items: center;
+}
+.form-estrutura{
+    background: #1f1f1f;
+}
+p{
+    background: #1f1f1f;
+    text-align: center;
 }
 
 .logo{
