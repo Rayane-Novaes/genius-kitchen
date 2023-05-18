@@ -2,7 +2,6 @@ package br.com.geniuskitchen.dao;
 
 import br.com.geniuskitchen.model.ItensPedidos;
 import br.com.geniuskitchen.model.Pedido;
-import br.com.geniuskitchen.dao.ItensPedidosDAO;
 
 
 import java.sql.*;
@@ -86,7 +85,7 @@ public class PedidoDAO {
 
     public List<Pedido> exibirPendente() {
 
-        String SQL = "SELECT PK_PEDIDO, MESA, NOME_CLIENTE FROM PEDIDOS WHERE andamento = 'pendente'";
+        String SQL = "SELECT * FROM PEDIDOS, ITENS_PEDIDOS INNER JOIN PRODUTOS ON ITENS_PEDIDOS.FK_PRODUTO = PRODUTOS.PK_PRODUTO WHERE PEDIDOS.ANDAMENTO = 'pendente'";
 
 
         try {
@@ -107,13 +106,12 @@ public class PedidoDAO {
                 String id =  resultSet.getString("pk_pedido");
                 String mesa = resultSet.getString("mesa");
                 String nome =  resultSet.getString("nome_cliente");
+                String quantidade =  resultSet.getString("quantidade");
+                String observacao =  resultSet.getString("Observacao");
+                String comida =  resultSet.getString("nome");
 
-                ItensPedidosDAO itens = new ItensPedidosDAO();
-                ItensPedidos item = itens.buscarItens(id);
+                Pedido pedido = new Pedido(Integer.parseInt(id),Integer.parseInt(mesa), nome, comida, Integer.parseInt(quantidade), observacao);
 
-                Pedido pedido = new Pedido(Integer.parseInt(id),Integer.parseInt(mesa), nome, item);
-
-                System.out.println(mesa);
                 pedidos.add(pedido);
 
             }

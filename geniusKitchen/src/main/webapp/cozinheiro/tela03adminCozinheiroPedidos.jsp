@@ -33,10 +33,10 @@
                      <p> <strong class="mesa">Mesa 0${pendente.mesa} </strong></p>
                      <p> <strong>Nome cliente: </strong> ${pendente.cliente}<p>
                      <p> <strong>Numero do pedido: </strong> 0${pendente.id}</p>
-
                      <div class="format-comida">
                          <p> <strong>Comidas a serem preparada:</strong></p>
-                         <p>{pendente.item.produto} </p>
+                         <p> ${pendente.comida}  -  Quantidade: ${pendente.quantidade}</p>
+
                      </div>
 
                       <form action="/update-pedido-preparado" method="post">
