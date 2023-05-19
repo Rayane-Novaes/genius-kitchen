@@ -7,6 +7,10 @@
     <style><%@include file="css/login.css"%></style>
 </head>
 <body>
+
+    <span>${requestScope.message}</span>
+
+
     <div class="container">
             <div class="img-container">
                 <img class="img-login" src="login/img/imagem-login.svg" alt="Imagem login">
@@ -15,7 +19,7 @@
             <form>
                 <div class="input-container">
                     <label for="username">Login</label>
-                    <input type="text" id="username" name="username" required>
+                    <input type="username" id="username" name="username" required>
                 </div>
                 <div class="input-container">
                     <label for="password">Senha</label>
