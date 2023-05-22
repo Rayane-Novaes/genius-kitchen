@@ -25,15 +25,9 @@ create table itens_pedidos(
 <<<<<<< HEAD
     observacao varchar(50) null
 );
+CREATE TABLE USR (ID INT PRIMARY KEY AUTO_INCREMENT, USERNAME VARCHAR(255), PASSWORD VARCHAR(255));
 
-CREATE TABLE Funcionario (
-    CodigoFuncionario VARCHAR(36) NOT NULL,
-    Nome VARCHAR(100) NOT NULL,
-    Email  VARCHAR(100) NOT NULL,
-    Senha VARCHAR(50),
-    Tipo VARCHAR(15),
-    PRIMARY KEY (CodigoFuncionario, Nome)
-);
+INSERT INTO USR (USERNAME, PASSWORD) VALUES ('admin', 'admin')
 
 CREATE TABLE Produto (
     Nome VARCHAR(100) NOT NULL,
@@ -50,6 +44,9 @@ CREATE TABLE item_cardapio (
   url_imagem VARCHAR(255),
   palavras_chave VARCHAR(255)
 );
+CREATE TABLE USR (ID INT PRIMARY KEY AUTO_INCREMENT, USERNAME VARCHAR(255), PASSWORD VARCHAR(255));
+
+INSERT INTO USR (USERNAME, PASSWORD) VALUES ('admin', 'admin')
 
 INSERT INTO ItemCardapio (Nome, Tipo, Preco, URLImagem) VALUES ('Duplo Burguer', 'Lanche', 27.44, 'https://raw.githubusercontent.com/Rayane-Novaes/genius-kitchen/4fade3e3a2bc688bb74fff4c92112b0feae08f4c/imagens/duplo-burger.svg');
 INSERT INTO ItemCardapio (Nome, Tipo, Preco, URLImagem) VALUES ('Choop Colorado', 'Bebida', 6.99, 'https://raw.githubusercontent.com/Rayane-Novaes/genius-kitchen/9f1ee48c3a4c2719cb23a3e6952948c677cfeb28/imagens/caneca-chopp-colorado.svg');
