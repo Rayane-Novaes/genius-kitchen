@@ -32,11 +32,11 @@ public class Produto {
 
 
 
-    public String getCod_Produto() {
+    public String getId() {
         return id;
     }
-    public void setCod_Produto(String cod_Produto) {
-        id = cod_Produto;
+    public void setId(String id) {
+        this.id = id;
     }
 
 

@@ -12,6 +12,11 @@ public class Pedido {
 
 
 
+    public Pedido(int mesa, int id, String cliente){
+        this.mesa = mesa;
+        this.cliente = cliente;
+        this.id = id;
+    }
 
     public Pedido(int mesa, String andamento, String cliente, int id) {
         this.mesa = mesa;

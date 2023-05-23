@@ -99,6 +99,79 @@ public class PedidoDAO {
 
     }
 
+
+    public List<Pedido> exibirPendente() {
+
+        String SQL = "SELECT PK_PEDIDO, MESA, NOME_CLIENTE FROM PEDIDOS WHERE andamento = 'pendente'";
+
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            List<Pedido> pedidos = new ArrayList<>();
+
+
+            while (resultSet.next()) {
+
+                String mesa = resultSet.getString("mesa");
+                String id =  resultSet.getString("pk_pedido");
+                String nome =  resultSet.getString("nome_cliente");
+
+                Pedido pedido = new Pedido(Integer.parseInt(mesa), Integer.parseInt(id), nome);
+                System.out.println(mesa);
+                pedidos.add(pedido);
+
+            }
+
+            System.out.println("select realizado com sucesso, pedidos encontrados.");
+
+            connection.close();
+
+            return pedidos;
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+
+            return Collections.emptyList();
+
+        }
+
+    }
+    public void updatePendente(Pedido pedido){
+        String SQL = "UPDATE PEDIDOS SET ANDAMENTO = ? WHERE pk_pedido = ?";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, "preparado");
+            preparedStatement.setString(2, Integer.toString(pedido.getId()));
+            preparedStatement.execute();
+
+            System.out.println("success in update status");
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+            System.out.println("Error: " + e.getMessage());
+
+        }
+    }
+
     public void updatePedido(Pedido pedido){
         String SQL = "UPDATE PEDIDOS SET ANDAMENTO = ? WHERE pk_pedido = ?";
 
