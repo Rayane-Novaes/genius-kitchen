@@ -3,3 +3,6 @@
 .settings
 .classpath
 .project
+/.gitignore
+/pom.xml
+/src/

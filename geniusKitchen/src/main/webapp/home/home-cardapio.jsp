@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Cardï¿½pio</title>
+    <title>Home - Cardapio</title>
     <style>
         <%@include file="../css/site.css" %>
     </style>
@@ -39,7 +39,7 @@
     </div>
     <div class="secao-2">
         <div class="s2-textos">
-            <h1 class="animate__animated animate__fadeInRight"><span>PROMOï¿½ï¿½O</span> COMBO FAMILIA</h1>
+            <h1 class="animate__animated animate__fadeInRight"><span>PROMOÇÃO</span> COMBO FAMILIA</h1>
             <p class="animate__animated animate__fadeInLeft">Nas compras dos combos familia, consiga um <span>desconto de 30% nas sobremesas</span></p>
         </div>
     </div>

@@ -12,11 +12,13 @@
 
 
     <div class="container">
+
             <div class="img-container">
                 <img class="img-login" src="login/img/imagem-login.svg" alt="Imagem login">
                 <img class="logo-login" src="login/img/Logo%205.png" alt="logo login">
             </div>
-            <form>
+            
+            <form action="login" method="post">
                 <div class="input-container">
                     <label for="username">Login</label>
                     <input type="username" id="username" name="username" required>
@@ -24,12 +26,21 @@
                 <div class="input-container">
                     <label for="password">Senha</label>
                     <input type="password" id="password" name="password" required>
+                        <% 
+       String mensagem = (String) request.getAttribute("mensagem");
+       if (mensagem != null && !mensagem.isEmpty()) {
+           %>
+           <p style="color:#fff; text-align:center;"><%= mensagem %></p>
+           <%
+       } 
+    %>
                 </div>
                        <button type="submit" class="btn">Confirmar</button>
                 <div class="esqueci-senha">
                        <a class="esqueci-senha" data-tipo="esqueci-senha">esqueci senha</a>
                 </div>
             </form>
+            
         </div>
   </body>
 </html>

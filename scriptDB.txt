@@ -2,10 +2,11 @@ create database genius_kitchen;
 use genius_kitchen;
 
 create table produtos(
-	pk_produto int primary key auto_increment,
-    nome varchar(50) not null,
-    valor decimal(5,2) null,
-    categoria varchar(20)
+	pk_produto int PRIMARY KEY AUTO_INCREMENT,
+    	nome VARHCAR(50) not null,
+    	valor DECIMAL(5,2) null,
+	imagem VARHCAR(255),
+	categoria VARCHAR(20)
 );
 
 create table pedidos(
@@ -44,6 +45,7 @@ CREATE TABLE item_cardapio (
   url_imagem VARCHAR(255),
   palavras_chave VARCHAR(255)
 );
+
 CREATE TABLE USR (ID INT PRIMARY KEY AUTO_INCREMENT, USERNAME VARCHAR(255), PASSWORD VARCHAR(255));
 
 INSERT INTO USR (USERNAME, PASSWORD) VALUES ('admin', 'admin')
@@ -54,4 +56,12 @@ INSERT INTO ItemCardapio (Nome, Tipo, Preco, URLImagem) VALUES ('Pudim de leite'
 =======
     observacao varchar(50) null
 );
->>>>>>> 83b42fc4cd9e423e1f73326d78986c786d72175e
+
+CREATE TABLE Usuario (
+  Username VARCHAR(100) PRIMARY KEY, 
+  Password VARCHAR(100) NOT NULL, 
+  Tipo VARCHAR(25) NOT NULL
+);
+
+INSERT INTO Usuario (Username, Password, Tipo) VALUES ('matheus', '1234', 'garcom');
+INSERT INTO Usuario (Username, Password, Tipo) VALUES ('jvieira', '4321', 'cozinheiro');
