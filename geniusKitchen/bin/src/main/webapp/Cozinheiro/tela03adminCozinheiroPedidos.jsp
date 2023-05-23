@@ -1,42 +1,58 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <title>adminCozinheiroPedidos</title>
 
-<link rel="stylesheet" href="sytle.css">
+<style><%@include file="sytle.css"%></style>
+
 <body>
-<span class="decoracao"><span>
-<div>
-        <div class="estrutura">
-            <a  class="botao-link" href="tela04CadastroDeProduto.jsp">Cadastrar Produto</a>
-        </div>
+    <span class="decoracao"><span>
 
-        <div class="logo">
-            <img class="logo-2" src="img/Logo%205.png" alt="logo genius kitchen">
-        </div>
+    <div class="estrutura">
 
-        <h1>PEDIDOS</h1>
-
-        <div class="ordem-de-pedidos">
-
-            <div class="item-pedidos">
-                <h2>Prioridade: 1°</h2>
-                <p>Mesa 10</p>
-                <a class="detalhes" href="modalPedido.jsp"> Detalhes </a>
-            </div>
-
-            <div class="item-pedidos">
-                <h2>Prioridade: 2°</h2>
-                <p>Mesa 04</p>
-                <a class="detalhes" href="modalPedido.jsp"> Detalhes </a>
-            </div>
-
-            <div class="item-pedidos">
-                <h2>Prioridade: 3°</h2>
-                <p>Mesa 06</p>
-                <a class="detalhes" href="modalPedido.jsp"> Detalhes </a>
-            </div>
-
-        </div>
+        <a  class="botao-link" href="cozinheiro/tela04CadastroDeProduto.jsp">Cadastrar Produto</a>
     </div>
 
+    <div class="logo">
+        <img class="logo-2" src="cozinheiro/img/Logo%205.png" alt="logo genius kitchen">
+    </div>
+
+    <h1>PEDIDOS</h1>
+
+        <div class="box-pedidos" id="pedidos">
+
+          <c:if test="${empty pendente}">
+              <div class="estrutura-item">
+                  <p>Nenhum pedido encontrado.</p>
+              </div>
+          </c:if>
+
+        <c:forEach var="pendente" items="${pendente}">
+            <div class="estrutura-item">
+                <div class="format-texto">
+                     <p> <strong class="mesa">Mesa 0${pendente.mesa} </strong></p>
+                     <p> <strong>Nome cliente: </strong> ${pendente.cliente}<p>
+                     <p> <strong>Numero do pedido: </strong> 0${pendente.id}</p>
+
+                     <div class="format-comida">
+                         <p> <strong>Comidas a serem preparada:</strong></p>
+                         <p> </p>
+                     </div>
+
+                      <form action="/update-pedido-preparado" method="post">
+                         <input type="hidden" id="id" name="id" value="${pendente.id}">
+                         <button class="btn-finalizar" type="submit"> Pronto para entrega </button>
+                      </form>
+
+                </div>
+
+               <img class="teste" src="cozinheiro/img/decoracao.png" alt="logo genius kitchen">
+
+            </div>
+
+      </c:forEach>
+
+        </div>
 </body>
+
 </html>

@@ -31,14 +31,12 @@
             <div class="item">
                 <label for="categoria-produto"> Categoria do produto </label>
                 <select name="categoria-produto" id="categoria">
-                <option disabled selected value="">selecione uma categoria</option>
-                <option value="entrada">entrada</option>
-<option value="prato principal">prato principal</option>
-<option value="lanche">lanche</option>
-<option value="bebida">bebida</option>
-<option value="sobremesa">sobremesa</option>
-</select>
-                
+	                <option disabled selected value="">selecione uma categoria</option>
+					<option value="prato principal">prato principal</option>
+					<option value="lanche">lanche</option>
+					<option value="bebida">bebida</option>
+					<option value="sobremesa">sobremesa</option>
+				</select>                
             </div>
 
             <div class="confirmar">

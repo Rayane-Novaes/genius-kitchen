@@ -14,14 +14,48 @@
     font-family: 'Inter', 'Arial';
 }
 
+
 .estrutura{
     display: flex;
     justify-content: flex-end;
 }
 
+
+.format-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 20px;
+}
+
+.mesa{
+    font-size: 28px;
+    font-family: 'Inter';
+    color: #E2664A;
+    padding-bottom: 42px;
+}
+
+.estrutura-item{
+    background: #2F3030;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    border-radius: 30px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.teste{
+    position: absolute;
+    max-width: 320px;
+    max-height: 180px;
+    right: 89px;
+    bottom: 50px;
+}
+
 body{
     background: #181818;
-    margin: 40px;
+    position: relative;
 }
 
 .ordem-de-pedidos{
