@@ -6,8 +6,7 @@
 <style><%@include file="sytle.css"%></style>
 
 <body>
-    <span class="decoracao"><span>
-
+    <img class="decoracao-img class="decoracao-img" src="/cozinheiro/img/decoracao.png" alt="decoração">
     <div class="estrutura">
 
         <a  class="botao-link" href="cozinheiro/tela04CadastroDeProduto.jsp">Cadastrar Produto</a>
@@ -33,10 +32,10 @@
                      <p> <strong class="mesa">Mesa 0${pendente.mesa} </strong></p>
                      <p> <strong>Nome cliente: </strong> ${pendente.cliente}<p>
                      <p> <strong>Numero do pedido: </strong> 0${pendente.id}</p>
-
                      <div class="format-comida">
                          <p> <strong>Comidas a serem preparada:</strong></p>
-                         <p> </p>
+                         <p> ${pendente.comida}  -  Quantidade: ${pendente.quantidade}</p>
+
                      </div>
 
                       <form action="/update-pedido-preparado" method="post">
@@ -46,7 +45,6 @@
 
                 </div>
 
-               <img class="teste" src="cozinheiro/img/decoracao.png" alt="logo genius kitchen">
 
             </div>
 

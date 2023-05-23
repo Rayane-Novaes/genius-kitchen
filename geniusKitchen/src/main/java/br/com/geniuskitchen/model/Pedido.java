@@ -6,10 +6,11 @@ public class Pedido {
     private String andamento;
 
     private String cliente;
-
+    private int quantidade;
+    private String observacao;
+    private String comida;
 
     public Pedido(){}
-
 
 
     public Pedido(int mesa, int id, String cliente){
@@ -39,6 +40,15 @@ public class Pedido {
         this.mesa = mesa;
         this.andamento = andamento;
         this.cliente = cliente;
+    }
+
+    public Pedido(int id, int mesa, String nome, String comida, int quantidade, String observacao) {
+        this.id = id;
+        this.mesa = mesa;
+        this.cliente = nome;
+        this.comida = comida;
+        this.quantidade = quantidade;
+        this.observacao = observacao;
     }
 
     public int getId() {
@@ -71,5 +81,29 @@ public class Pedido {
 
     public void setCliente(String cliente) {
         this.cliente = cliente;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public String getObservacao() {
+        return observacao;
+    }
+
+    public void setObservacao(String observacao) {
+        this.observacao = observacao;
+    }
+
+    public String getComida() {
+        return comida;
+    }
+
+    public void setComida(String comida) {
+        this.comida = comida;
     }
 }
