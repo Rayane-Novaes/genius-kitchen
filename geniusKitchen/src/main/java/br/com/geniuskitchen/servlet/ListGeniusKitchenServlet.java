@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.geniuskitchen.dao.CardapioDAO;
 import br.com.geniuskitchen.dao.ProdutoDAO;
 import br.com.geniuskitchen.model.Produto;
 

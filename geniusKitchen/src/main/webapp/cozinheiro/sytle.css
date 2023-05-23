@@ -54,6 +54,17 @@ body{
     right: 89px;
     bottom: 50px;
 }
+select {
+    background: #1f1f1f;
+    padding: 14px;
+    border-radius: 12px;
+}
+
+.mostra-produto{
+    background: #C5582E;
+    padding: 14px;
+    border-radius: 20px;
+}
 
 body{
     background: #181818;
