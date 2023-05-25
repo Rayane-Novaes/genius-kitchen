@@ -36,9 +36,6 @@
     %>
                 </div>
                        <button type="submit" class="btn">Confirmar</button>
-                <div class="esqueci-senha">
-                       <a class="esqueci-senha" data-tipo="esqueci-senha">esqueci senha</a>
-                </div>
             </form>
             
         </div>
