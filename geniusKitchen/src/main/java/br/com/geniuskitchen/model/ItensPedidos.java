@@ -10,8 +10,8 @@ public class ItensPedidos {
 
     private String observacao;
 
-    public ItensPedidos(int quantidade, Produto produto, int idPedido){
-        this.pedido.setId(idPedido);
+    public ItensPedidos(int quantidade, Produto produto, Pedido pedido){
+        this.pedido = pedido;
         this.produto = produto;
         this.quantidade = quantidade;
     }

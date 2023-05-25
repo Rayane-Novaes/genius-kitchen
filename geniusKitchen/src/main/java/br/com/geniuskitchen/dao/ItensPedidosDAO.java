@@ -11,7 +11,7 @@ public class ItensPedidosDAO {
 
     public void createItensPedidos( ItensPedidos itensPedidos) {
 
-        String SQL = "INSERT INTO ITENS_PEDIDOS (QUANTIDADE,FK_PRODUTO) VALUES (?, ?)";
+        String SQL = "INSERT INTO ITENS_PEDIDOS (QUANTIDADE,FK_PRODUTO, FK_PEDIDO) VALUES (?, ?, ?)";
 
         try {
 
@@ -23,7 +23,7 @@ public class ItensPedidosDAO {
 
             preparedStatement.setInt(1, itensPedidos.getQuantidade());
             preparedStatement.setInt(2, Integer.parseInt(itensPedidos.getProduto().getId()));
-//            preparedStatement.setInt(3, itensPedidos.getPedido().getId());
+            preparedStatement.setInt(3, itensPedidos.getPedido().getId());
 //            preparedStatement.setString(2, itensPedidos.getObservacao());
 
             preparedStatement.execute();

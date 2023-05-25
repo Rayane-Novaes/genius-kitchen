@@ -34,10 +34,10 @@ public class abrirMesaServlet extends HttpServlet {
         Pedido pedido = new Pedido(mesa, nomeCliente);
         new PedidoDAO().createPedido(pedido);
         int idPedido = new PedidoDAO().ultimoIDPedido(pedido);
-        System.out.println("IdPEDIDO = " + idPedido);
+        pedido.setId(idPedido);
         Produto produto = new Produto(produtoId);
 
-        ItensPedidos itensPedidos = new ItensPedidos(Integer.parseInt(quantidade), produto);
+        ItensPedidos itensPedidos = new ItensPedidos(Integer.parseInt(quantidade), produto, pedido);
         new ItensPedidosDAO().createItensPedidos(itensPedidos);
     }
 }
