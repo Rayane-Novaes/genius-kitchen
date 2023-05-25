@@ -10,10 +10,11 @@ public class ItensPedidos {
 
     private String observacao;
 
-    public ItensPedidos(int quantidade, Produto produto, Pedido pedido){
+    public ItensPedidos(int quantidade, Produto produto, Pedido pedido, String observacao){
         this.pedido = pedido;
         this.produto = produto;
         this.quantidade = quantidade;
+        this.observacao = observacao;
     }
     public ItensPedidos(int quantidade,Produto produto){
         this.quantidade = quantidade;

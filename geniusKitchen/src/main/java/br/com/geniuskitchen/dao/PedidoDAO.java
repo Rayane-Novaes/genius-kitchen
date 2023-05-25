@@ -18,7 +18,7 @@ public class PedidoDAO {
 
     public void createPedido(Pedido pedido) {
 
-        String SQL = "INSERT INTO PEDIDOS (mesa, nome_cliente) VALUES (?, ?)";
+        String SQL = "INSERT INTO PEDIDOS (mesa, nome_cliente, andamento) VALUES (?, ?, ?)";
 
         try {
 
@@ -30,6 +30,7 @@ public class PedidoDAO {
 
             preparedStatement.setInt(1, pedido.getMesa());
             preparedStatement.setString(2, pedido.getCliente());
+            preparedStatement.setString(3, "pendente");
 
             preparedStatement.execute();
 
@@ -207,8 +208,6 @@ public class PedidoDAO {
                 int id = resultSet.getInt("PK_PEDIDO");
                 return id;
             }
-
-            System.out.println("select realizado com sucesso, pedidos encontrados.");
 
             connection.close();
 

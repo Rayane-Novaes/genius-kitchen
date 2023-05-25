@@ -37,6 +37,9 @@
                 </select>
                 <input type="number" id="qtd" name="qtd" placeholder="Qtd" required>
             </div>
+                <div>
+                    <input type="txt" id="observacao" name="observacao" placeholder="Observação" maxlength="50">
+                </div>
 
             <div>
                 <button type="submit">

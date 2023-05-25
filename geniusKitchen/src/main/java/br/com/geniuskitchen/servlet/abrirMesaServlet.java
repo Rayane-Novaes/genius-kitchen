@@ -22,6 +22,8 @@ import java.util.List;
 @WebServlet("/nova-mesa")
 public class abrirMesaServlet extends HttpServlet {
 
+
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("Cadastrando novo pedido");
@@ -30,6 +32,7 @@ public class abrirMesaServlet extends HttpServlet {
         int mesa = Integer.parseInt(request.getParameter("mesa"));
         int produtoId = Integer.parseInt(request.getParameter("produto"));
         String quantidade = request.getParameter("qtd");
+        String observacao = request.getParameter("observacao");
 
         Pedido pedido = new Pedido(mesa, nomeCliente);
         new PedidoDAO().createPedido(pedido);
@@ -37,7 +40,9 @@ public class abrirMesaServlet extends HttpServlet {
         pedido.setId(idPedido);
         Produto produto = new Produto(produtoId);
 
-        ItensPedidos itensPedidos = new ItensPedidos(Integer.parseInt(quantidade), produto, pedido);
+        ItensPedidos itensPedidos = new ItensPedidos(Integer.parseInt(quantidade), produto, pedido, observacao);
         new ItensPedidosDAO().createItensPedidos(itensPedidos);
+
+        response.sendRedirect("/garcom/pedidoRealizado.jsp");
     }
 }
