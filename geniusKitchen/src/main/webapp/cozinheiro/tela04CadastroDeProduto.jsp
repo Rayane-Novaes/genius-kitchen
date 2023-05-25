@@ -6,7 +6,7 @@
     <title>Cadastro de produto</title>
 </head>
 <body>
-<a href = "/inicio">mostrar produtos</a>
+<a class="mostra-produto" href = "/inicio">mostrar produtos</a>
 <style><%@include file="sytle.css"%></style>
 
 <h1> Produtos </h1>
@@ -32,10 +32,10 @@
                 <label for="categoria-produto"> Categoria do produto </label>
                 <select name="categoria-produto" id="categoria">
 	                <option disabled selected value="">selecione uma categoria</option>
-					<option value="prato principal">prato principal</option>
-					<option value="lanche">lanche</option>
-					<option value="bebida">bebida</option>
-					<option value="sobremesa">sobremesa</option>
+					<option value="Adicionais">Adicionais</option>
+					<option value="Lanches">Lanches</option>
+					<option value="Bebidas">Bebidas</option>
+					<option value="Sobremesas">Sobremesas</option>
 				</select>                
             </div>
 
@@ -54,10 +54,10 @@
     <table>
         <tr>
             <th> ID </th>
-            <th> nome-produto </th>
-            <th> valor-produto </th>
-            <th> categoria-produto </th>
-            <th> actions </th>
+            <th> Nome </th>
+            <th> Valor </th>
+            <th> Categoria </th>
+            <th> Actions </th>
         </tr>
 
 <c:forEach var="produto" items="${produtos}">

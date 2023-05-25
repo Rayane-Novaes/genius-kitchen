@@ -24,7 +24,7 @@
                 <div class="container">
                     <div class="container-navbar-login animate__animated animate__fadeInLeft">
                         <div class="btn-login">
-                            <a href="#">Login</a>
+                            <a href="/login/login.jsp">Login</a>
                         </div>
                     </div>
                     <div class="container-navbar-logo">

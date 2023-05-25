@@ -12,8 +12,8 @@
 </head>
 
 <body>
+<img class="detalhes-imagem" src="garcom/images/decoracao.png" alt="">
     <div class="box-principal">
-
         <img class="logo" src="/garcom/images/logo.svg" alt="logo Genius Kitchen">
         <h1 class="titulo"> CONCLUIDOS<h1>
 
@@ -22,14 +22,15 @@
             <p>Nenhum pedido encontrado.</p>
           </c:if>
           <c:forEach var="pedido" items="${pedidos}">
-            <p>Pedido numero: ${pedido.id} | Mesa: ${pedido.mesa}</p>
+              <div class="estrutura-pedidos">
 
-            <form action="/update-pedido-concluido" method="post">
+                  <p>Pedido numero: ${pedido.id} | Mesa: ${pedido.mesa}</p>
+                  <form class="form-estrutura" action="/update-pedido-concluido" method="post">
+                      <input type="hidden" id="id" name="id" value="${pedido.id}">
+                      <button class="btn-finalizar" type="submit">Finalizar</button>
+                  </form>
+              </div>
 
-                 <input type="hidden" id="id" name="id" value="${pedido.id}">
-                 <button class="btn-finalizar" type="submit">Finalizar</button>
-
-            </form>
 
           </c:forEach>
         </div>

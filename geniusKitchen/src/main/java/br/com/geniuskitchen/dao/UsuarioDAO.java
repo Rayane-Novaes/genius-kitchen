@@ -1,14 +1,11 @@
 package br.com.geniuskitchen.dao;
 
 import br.com.geniuskitchen.dao.connection.DatabaseConnection;
-import br.com.geniuskitchen.model.ItemCardapio;
 import br.com.geniuskitchen.model.Usuario;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.ArrayList;
 
 public class UsuarioDAO {
 
