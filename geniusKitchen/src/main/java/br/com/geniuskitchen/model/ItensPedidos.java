@@ -10,9 +10,9 @@ public class ItensPedidos {
 
     private String observacao;
 
-<<<<<<< HEAD
+
     public ItensPedidos(int quantidade, Produto produto, Pedido pedido, String observacao){
-=======
+
     public ItensPedidos(){}
 
     public ItensPedidos(int id, int quantidade, Produto produto, String observacao) {
@@ -24,7 +24,6 @@ public class ItensPedidos {
 
 
     public ItensPedidos(Pedido pedido, Produto produto, int quantidade){
->>>>>>> 96b164c19b421f9eab5dde0ea2a8aa18f7c6942e
         this.pedido = pedido;
         this.produto = produto;
         this.quantidade = quantidade;

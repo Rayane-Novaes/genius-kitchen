@@ -42,11 +42,11 @@ public class Pedido {
         this.cliente = cliente;
     }
 
-<<<<<<< HEAD
+
     public Pedido(int mesa, String nomeCliente) {
         this.mesa = mesa;
         this.cliente = nomeCliente;
-=======
+
     public Pedido(int id, int mesa, String nome, String comida, int quantidade, String observacao) {
         this.id = id;
         this.mesa = mesa;
@@ -54,7 +54,7 @@ public class Pedido {
         this.comida = comida;
         this.quantidade = quantidade;
         this.observacao = observacao;
->>>>>>> 96b164c19b421f9eab5dde0ea2a8aa18f7c6942e
+
     }
 
     public int getId() {

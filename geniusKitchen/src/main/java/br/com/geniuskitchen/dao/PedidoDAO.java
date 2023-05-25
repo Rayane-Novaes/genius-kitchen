@@ -5,15 +5,15 @@ import br.com.geniuskitchen.model.Pedido;
 import br.com.geniuskitchen.model.Produto;
 
 
-<<<<<<< HEAD
+
 import javax.servlet.ServletOutputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-=======
+
 import java.sql.*;
->>>>>>> 96b164c19b421f9eab5dde0ea2a8aa18f7c6942e
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
