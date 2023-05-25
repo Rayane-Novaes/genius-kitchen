@@ -17,12 +17,12 @@
                 <div class="sub-item">
                     <div class="estrutura-texto">
                         <label class="label-form" for="nome-produto">Nome do produto</label>
-                        <input type="text" name="nome-produto" id="nome" value="${param.nome}">
+                        <input required type="text" name="nome-produto" id="nome" value="${param.nome}">
                     </div>
 
                     <div class="estrutura-texto">
                         <label for="valor-produto"> Valor do produto </label>
-                        <input type="text" name="valor-produto" id="valor" value="${param.valor}">
+                        <input required type="text" name="valor-produto" id="valor" value="${param.valor}">
                     </div>
                 </div>
 
@@ -30,7 +30,7 @@
             </div>
             <div class="item">
                 <label for="categoria-produto"> Categoria do produto </label>
-                <select name="categoria-produto" id="categoria">
+                <select required name="categoria-produto" id="categoria">
 	                <option disabled selected value="">selecione uma categoria</option>
 					<option value="Adicionais">Adicionais</option>
 					<option value="Lanches">Lanches</option>
