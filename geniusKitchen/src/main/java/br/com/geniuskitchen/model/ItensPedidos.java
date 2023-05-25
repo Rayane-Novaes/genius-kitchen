@@ -10,6 +10,14 @@ public class ItensPedidos {
 
     private String observacao;
 
+
+    public ItensPedidos(int quantidade, Produto produto, Pedido pedido, String observacao){
+        this.pedido = pedido;
+        this.produto = produto;
+        this.quantidade = quantidade;
+        this.observacao = observacao;
+    }
+
     public ItensPedidos(){}
 
     public ItensPedidos(int id, int quantidade, Produto produto, String observacao) {
@@ -24,6 +32,11 @@ public class ItensPedidos {
         this.pedido = pedido;
         this.produto = produto;
         this.quantidade = quantidade;
+        this.observacao = observacao;
+    }
+    public ItensPedidos(int quantidade,Produto produto){
+        this.quantidade = quantidade;
+        this.produto = produto;
     }
 
     public int getId() {
@@ -53,6 +66,10 @@ public class ItensPedidos {
     public Produto getProduto() {
         return produto;
     }
+
+//    public int getProdutoID(){
+//        int id = produto.getId();
+//    }
 
     public void setProduto(Produto produto) {
         this.produto = produto;

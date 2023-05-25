@@ -2,8 +2,6 @@ package br.com.geniuskitchen.model;
 
 public class Produto {
 
-
-
     private String id;
     private String nome;
     private String categoria;
@@ -28,8 +26,8 @@ public class Produto {
 
     public Produto(){};
 
-    public Produto(String nome){
-        this.nome = nome;
+    public Produto(int id){
+        this.id = String.valueOf(id);
     }
 
 

@@ -2,9 +2,18 @@ package br.com.geniuskitchen.dao;
 
 import br.com.geniuskitchen.model.ItensPedidos;
 import br.com.geniuskitchen.model.Pedido;
+import br.com.geniuskitchen.model.Produto;
 
+
+
+import javax.servlet.ServletOutputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 import java.sql.*;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -13,7 +22,7 @@ public class PedidoDAO {
 
     public void createPedido(Pedido pedido) {
 
-        String SQL = "INSERT INTO PEDIDOS (NAME) VALUES (?)";
+        String SQL = "INSERT INTO PEDIDOS (mesa, nome_cliente, andamento) VALUES (?, ?, ?)";
 
         try {
 
@@ -23,10 +32,14 @@ public class PedidoDAO {
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
-            preparedStatement.setString(1, pedido.getCliente());
+            preparedStatement.setInt(1, pedido.getMesa());
+            preparedStatement.setString(2, pedido.getCliente());
+            preparedStatement.setString(3, "pendente");
+
             preparedStatement.execute();
 
             System.out.println("success in insert pedido");
+
 
             connection.close();
 
@@ -175,7 +188,7 @@ public class PedidoDAO {
             preparedStatement.setString(2, Integer.toString(pedido.getId()));
             preparedStatement.execute();
 
-            System.out.println("success in update car");
+            System.out.println("success in update pedido");
 
             connection.close();
 
@@ -185,5 +198,33 @@ public class PedidoDAO {
             System.out.println("Error: " + e.getMessage());
 
         }
+    }
+    public int ultimoIDPedido (Pedido pedido){
+        String SQL = "SELECT PK_PEDIDO FROM PEDIDOS ORDER BY PK_PEDIDO DESC LIMIT 1";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+
+            if (resultSet.next()) {
+                int id = resultSet.getInt("PK_PEDIDO");
+                return id;
+            }
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+
+        }
+        return -1;
     }
 }

@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.List;
 
 import br.com.geniuskitchen.model.Produto;
 
@@ -97,5 +98,41 @@ public class ProdutoDAO {
 
     }
 
+    public List<Produto> ListarProdutos() {
+        System.out.println("AAAAAAAAAAAAAAAAAAAAAAA");
+        String sql = "SELECT * FROM Produtos";
+        List<Produto> listaProdutos = new ArrayList<>();
+
+        // Estabelecer a conexão com o banco de dados
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test","sa","sa");
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            ResultSet result = preparedStatement.executeQuery();
+
+            System.out.println("Conexão com banco feita com sucesso!");
+
+            while (result.next()) {
+
+                Produto produto = new Produto(result.getString("PK_PRODUTO"),
+                        result.getString("NOME"), result.getString("CATEGORIA"),
+                        result.getDouble("VALOR"));
+
+                listaProdutos.add(produto);
+
+                //Populando ArrayList
+                System.out.println(listaProdutos);
+
+            }
+            System.out.println("select realizado com sucessso no banco, lista de produtos encontrada");
+
+            result.close();
+            preparedStatement.close();
+            connection.close();
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return listaProdutos;
+    }
 }
 

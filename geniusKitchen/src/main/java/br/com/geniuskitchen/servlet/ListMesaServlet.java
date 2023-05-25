@@ -22,9 +22,7 @@ public class ListMesaServlet extends HttpServlet {
 
         req.setAttribute("pedidos", pedidos);
 
-
         req.getRequestDispatcher("/garcom/concluidos.jsp").forward(req, resp);
-
 
     }
 }
