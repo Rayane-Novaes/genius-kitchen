@@ -26,8 +26,8 @@ public class Produto {
 
     public Produto(){};
 
-    public Produto(String nome){
-        this.nome = nome;
+    public Produto(int id){
+        this.id = String.valueOf(id);
     }
 
 

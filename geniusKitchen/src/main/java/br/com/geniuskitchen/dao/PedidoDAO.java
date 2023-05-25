@@ -16,10 +16,9 @@ import java.util.List;
 
 public class PedidoDAO {
 
-    public void createPedido(Pedido pedido, ItensPedidos itensPedidos) {
+    public void createPedido(Pedido pedido) {
 
-//        String SQL = "INSERT INTO PEDIDOS (mesa, nome_cliente) VALUES (?, ?)";
-        String SQL2 = "INSERT INTO ITENS_PEDIDOS (fk_produto, quantidade) VALUES (?, ?)";
+        String SQL = "INSERT INTO PEDIDOS (mesa, nome_cliente) VALUES (?, ?)";
 
         try {
 
@@ -27,23 +26,15 @@ public class PedidoDAO {
 
             System.out.println("success in database connection");
 
-//            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
-//
-//            preparedStatement.setInt(1, pedido.getMesa());
-//            preparedStatement.setString(2, pedido.getCliente());
-//
-//            preparedStatement.execute();
-//
-//            System.out.println("success in insert pedido");
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
-            PreparedStatement preparedStatement2 = connection.prepareStatement(SQL2);
-//            preparedStatement2.setInt(1, Integer.parseInt(String.valueOf(itensPedidos.getProduto());
-            preparedStatement2.setInt(1,itensPedidos.getId());
-            preparedStatement2.setInt(2, itensPedidos.getQuantidade());
+            preparedStatement.setInt(1, pedido.getMesa());
+            preparedStatement.setString(2, pedido.getCliente());
 
-            preparedStatement2.execute();
+            preparedStatement.execute();
 
-            System.out.println("success in insert itens_pedidos");
+            System.out.println("success in insert pedido");
+
 
             connection.close();
 
@@ -197,5 +188,35 @@ public class PedidoDAO {
             System.out.println("Error: " + e.getMessage());
 
         }
+    }
+    public int ultimoIDPedido (Pedido pedido){
+        String SQL = "SELECT PK_PEDIDO FROM PEDIDOS ORDER BY PK_PEDIDO DESC LIMIT 1";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+
+            if (resultSet.next()) {
+                int id = resultSet.getInt("PK_PEDIDO");
+                return id;
+            }
+
+            System.out.println("select realizado com sucesso, pedidos encontrados.");
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+
+        }
+        return -1;
     }
 }

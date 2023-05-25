@@ -35,7 +35,7 @@
         </div>
 
         <div class="box-button">
-            <a href="/garcom/abrirMesa.jsp" >
+            <a href="abrirMesa" action="/abrirMesa" methods="get" >
                 <img class="adicionar-icon" class="logo" src="/garcom/images/adicionarIcon.svg" alt="Icone adicionar">
             </a>
         </div>

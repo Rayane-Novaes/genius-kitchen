@@ -10,10 +10,14 @@ public class ItensPedidos {
 
     private String observacao;
 
-    public ItensPedidos(Pedido pedido, Produto produto, int quantidade){
-        this.pedido = pedido;
+    public ItensPedidos(int quantidade, Produto produto, int idPedido){
+        this.pedido.setId(idPedido);
         this.produto = produto;
         this.quantidade = quantidade;
+    }
+    public ItensPedidos(int quantidade,Produto produto){
+        this.quantidade = quantidade;
+        this.produto = produto;
     }
 
     public int getId() {
@@ -43,6 +47,10 @@ public class ItensPedidos {
     public Produto getProduto() {
         return produto;
     }
+
+//    public int getProdutoID(){
+//        int id = produto.getId();
+//    }
 
     public void setProduto(Produto produto) {
         this.produto = produto;
