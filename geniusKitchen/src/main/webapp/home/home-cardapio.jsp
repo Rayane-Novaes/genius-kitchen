@@ -24,7 +24,7 @@
                 <div class="container">
                     <div class="container-navbar-login animate__animated animate__fadeInLeft">
                         <div class="btn-login">
-                            <a href="/login/login.jsp">Login</a>
+                            <a href="/login">Login</a>
                         </div>
                     </div>
                     <div class="container-navbar-logo">
@@ -39,7 +39,7 @@
     </div>
     <div class="secao-2">
         <div class="s2-textos">
-            <h1 class="animate__animated animate__fadeInRight"><span>PROMOÇÃO</span> COMBO FAMILIA</h1>
+            <h1 class="animate__animated animate__fadeInRight"><span>PROMOï¿½ï¿½O</span> COMBO FAMILIA</h1>
             <p class="animate__animated animate__fadeInLeft">Nas compras dos combos familia, consiga um <span>desconto de 30% nas sobremesas</span></p>
         </div>
     </div>
