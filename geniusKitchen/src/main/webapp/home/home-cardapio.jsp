@@ -47,15 +47,7 @@
         <div class="container-campo-buscar-home-page">
             <input id="campoBuscaHomePage" placeholder="procure sua comida aqui">
         </div>
-        <div class="container-tab-navegation-home-page ">
-            <div class="tab-navegation-home-page ">
-            	<a class="item-cardapio" data-tipo="TODOS">Todos</a>
-                <a class="item-cardapio" data-tipo="LANCHE">Lanches</a>
-                <a class="item-cardapio" data-tipo="SOBREMESA">Sobremesas</a>
-                <a class="item-cardapio" data-tipo="BEBIDA">Bebidas</a>
-                <a class="item-cardapio" data-tipo="ADICIONAL">Adicionais</a>
-            </div>
-        </div>
+
 
         <div class="container-itens-home-page">
             <c:forEach var="item" items="${listaItems}">
