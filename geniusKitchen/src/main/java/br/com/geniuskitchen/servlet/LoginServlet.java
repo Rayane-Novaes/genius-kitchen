@@ -42,11 +42,11 @@ public class LoginServlet extends HttpServlet {
 			SessionHelper.criarSessao(req, usuarioBase.getUsername(), usuarioBase.getTipo().toString());
 			
 			if(TipoUsuario.GARCOM == usuarioBase.getTipo()) {
-				resp.sendRedirect("find-mesa");				
+				resp.sendRedirect("listarProdutos");
 			}
 			
 			else if(TipoUsuario.COZINHEIRO == usuarioBase.getTipo()) { 
-				resp.sendRedirect("listarProdutos");
+				resp.sendRedirect("/exibir-pendente");
 			}
 
 			} else {
