@@ -24,17 +24,19 @@ display: flex;
 
 label {
     color: #fff;
+    font-family: 'Arial';
     font-size: 20px;
     margin-bottom: 5px;
 }
 
 input {
-    background-color:#5E5E5E;
+    background-color: #383838;
     border-radius: 20px;
     border: none;
     padding: 10px;
     font-size: 16px;
     margin-bottom: 20px;
+    color: #D7D4D4;
 }
 
 .btn {
