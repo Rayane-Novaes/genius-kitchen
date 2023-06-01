@@ -13,10 +13,7 @@
 
     <div class="container">
 
-            <div class="img-container">
-                <img class="img-login" src="login/img/imagem-login.svg" alt="Imagem login">
-                <img class="logo-login" src="login/img/Logo%205.png" alt="logo login">
-            </div>
+
             
             <form action="login" method="post">
                 <div class="input-container">
