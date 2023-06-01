@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
 			SessionHelper.criarSessao(req, usuarioBase.getUsername(), usuarioBase.getTipo().toString());
 			
 			if(TipoUsuario.GARCOM == usuarioBase.getTipo()) {
-				resp.sendRedirect("listarProdutos");
+				resp.sendRedirect("/find-mesa");
 			}
 			
 			else if(TipoUsuario.COZINHEIRO == usuarioBase.getTipo()) { 
