@@ -39,7 +39,7 @@
     </div>
     <div class="secao-2">
         <div class="s2-textos">
-            <h1 class="animate__animated animate__fadeInRight"><span>PROMO��O</span> COMBO FAMILIA</h1>
+            <h1 class="animate__animated animate__fadeInRight"><span>NOVIDADE</span> COMBO FAMILIA</h1>
             <p class="animate__animated animate__fadeInLeft">Nas compras dos combos familia, consiga um <span>desconto de 30% nas sobremesas</span></p>
         </div>
     </div>
