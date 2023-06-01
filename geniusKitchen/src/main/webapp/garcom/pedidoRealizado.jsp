@@ -17,13 +17,16 @@
 </head>
 <body>
 
-<h1 class="titulo">PEDIDO REALIZADO COM SUCESSO !</h1>
+<div>
+    <h1 class="titulo">PEDIDO REALIZADO COM SUCESSO !</h1>
 
-<div class="box-button">
-    <a class="btn-voltar" href="/find-mesa" action="/find-mesa" methods="get" >
-        VOLTAR PARA PEDIDOS CONCLUIDOS
-    </a>
+    <div class="box-button">
+        <a class="btn-voltar" href="/find-mesa" action="/find-mesa" methods="get" >
+            VOLTAR PARA PEDIDOS CONCLUIDOS
+        </a>
+    </div>
 </div>
+
 
 </body>
 </html>

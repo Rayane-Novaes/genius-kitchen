@@ -11,6 +11,18 @@
 
 }
 
+a{
+    color: #D7D4D4;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .titulo{
     color: #E2664A;
     font-size: 50px;
@@ -23,14 +35,14 @@
 
 .box-button{
 
-    width:37.5vw;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
+    color: #D7D4D4;
 
 }
 
 .btn-voltar{
-    color: #181818;
+    color: #D7D4D4;
     background-color: #E2664A;
     border-radius: 10px;
     text-decoration: none;
